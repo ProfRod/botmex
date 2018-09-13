@@ -1,6 +1,7 @@
 const config = require('./config.json'),
     TelegramBot = require('node-telegram-bot-api'),
     SwaggerClient = require("swagger-client"),
+    crypto = require('crypto'),
     _ = require('lodash'),
     db = require('diskdb'),
     BitMEXAPIKeyAuthorization = require('./lib/BitMEXAPIKeyAuthorization');
@@ -9,6 +10,7 @@ const config = require('./config.json'),
 const bot = new TelegramBot(config.token, {polling: true});
 const apiurl = config.testnet?config.bitmex.testurl:config.bitmex.produrl;
 const helpkeyboard = {"reply_markup": {"keyboard": [["/help"]],"one_time_keyboard":true}};
+const algorithm = 'aes256';
 
 if( config.testnet )
 {
@@ -55,6 +57,20 @@ function getAdminUsernames()
     });
 
     return usernames.join(" OR ");
+}
+
+function encrypt(text, msg)
+{
+    var password = msg.from.username+msg.chat.id;
+    var cipher = crypto.createCipher(algorithm, password);  
+    return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');
+}
+
+function decrypt(encrypted, msg)
+{
+    var password = msg.from.username+msg.chat.id;
+    var decipher = crypto.createDecipher(algorithm, password);
+    return decipher.update(encrypted, 'hex', 'utf8') + decipher.final('utf8');
 }
 
 // Start
@@ -250,7 +266,10 @@ bot.onText(/\/accounts$/, (msg) => {
             accounts.forEach(function(account){
 
                 // Do some hiding for the account key/secret
-                reply = reply + account.name + " (" + account.key.substring(0,5) + "*****" + account.key.slice(-5) + " : " + account.secret.substring(0,5) + "*****" + account.secret.slice(-5) + ")\n";
+                var pkey = decrypt(account.key,msg).substring(0,5) + "*****" + decrypt(account.key,msg).slice(-5);
+                var psecret = decrypt(account.secret,msg).substring(0,5) + "*****" + decrypt(account.secret,msg).slice(-5);
+
+                reply = reply + account.name + " (" + pkey + " : " + psecret + ")\n";
             });
         }
         else
@@ -270,7 +289,7 @@ bot.onText(/\/addaccount ([^\s\\]+) ([^\s\\]+) ([^\s\\]+)$/, (msg, match) => {
     if( isPremiumUser(msg.from.username) )
     {
         // Check if api key/secret already exists
-        var exist = db.accounts.findOne({username: msg.from.username,key: match[2],secret: match[3]});
+        var exist = db.accounts.findOne({username: msg.from.username, key: encrypt(match[2],msg),secret: encrypt(match[3],msg)});
 
         if( exist != undefined )
         {
@@ -281,8 +300,8 @@ bot.onText(/\/addaccount ([^\s\\]+) ([^\s\\]+) ([^\s\\]+)$/, (msg, match) => {
             var account = {
                 username: msg.from.username,
                 name: match[1],
-                key: match[2],
-                secret: match[3]
+                key: encrypt(match[2],msg),
+                secret: encrypt(match[3],msg)
             }
 
             db.accounts.save(account);
@@ -344,8 +363,9 @@ bot.onText(/\/positions$/, (msg) => {
                     url: apiurl,
                     usePromise: true
                 }).then(function(client) {
+
                     // Comment out if you're not requesting any user data.
-                    client.clientAuthorizations.add("apiKey", new BitMEXAPIKeyAuthorization(account.key, account.secret));
+                    client.clientAuthorizations.add("apiKey", new BitMEXAPIKeyAuthorization(decrypt(account.key,msg), decrypt(account.secret,msg)));
 
                     //console.log(client.Position);
 
@@ -429,7 +449,7 @@ bot.onText(/\/positions ([^\s\\]+)$/, (msg, match) => {
                 usePromise: true
             }).then(function(client) {
                 // Comment out if you're not requesting any user data.
-                client.clientAuthorizations.add("apiKey", new BitMEXAPIKeyAuthorization(account.key, account.secret));
+                client.clientAuthorizations.add("apiKey", new BitMEXAPIKeyAuthorization(decrypt(account.key,msg), decrypt(account.secret,msg)));
 
                 //console.log(client.Position);
 
