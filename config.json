@@ -1,0 +1,8 @@
+{
+    "token": "<INSERT TOKEN HERE>",
+    "testnet": true,
+    "bitmex": {
+        "testurl": "https://testnet.bitmex.com/api/explorer/swagger.json",
+        "produrl": "https://www.bitmex.com/api/explorer/swagger.json"
+    }
+}
