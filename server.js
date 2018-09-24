@@ -95,6 +95,8 @@ bot.onText(/\/help$/, (msg) => {
         reply = reply + "/delaccount <account name> - Remove a BitMex API Account\n";
         reply = reply + "/positions - List of open positions for all accounts\n";
         reply = reply + "/positions <account name> - List of open positions for specified account\n";
+        reply = reply + "/bal - List balance of all your accounts\n";
+        reply = reply + "/bal <account name> - List balance for specified account\n";
         reply = reply + "/close <trade symbol> - Close open trade for specified symbol for all accounts\n";
         reply = reply + "/close <trade symbol> <account name> - Close open trade for specified symbol for specified account\n";
 
@@ -500,6 +502,84 @@ bot.onText(/\/positions ([^\s\\]+)$/, (msg, match) => {
         else
         {
             reply = "Account does not exist";
+            bot.sendMessage(msg.chat.id, reply);
+        }
+    }
+    else
+    {
+        bot.sendMessage(msg.chat.id, reply);
+    }
+});
+
+// List all open positions on all accounts
+bot.onText(/\/bal$/, (msg) => {
+
+    var reply = "Invalid Command. Type /help for more info.";
+    if( isPremiumUser(msg.from.username) )
+    {
+        var query = {
+            username: msg.from.username
+        }
+
+        var accounts = db.accounts.find(query);
+
+        if( accounts.length )
+        {
+            var msgtext = "";
+
+            accounts.forEach(function(account){
+
+                var bitmex = new SwaggerClient({
+                    url: apiurl,
+                    usePromise: true
+                }).then(function(client) {
+
+                    // Comment out if you're not requesting any user data.
+                    client.clientAuthorizations.add("apiKey", new BitMEXAPIKeyAuthorization(decrypt(account.key,msg), decrypt(account.secret,msg)));
+
+                    //console.log(client.Position);
+
+                    client.User.User_getMargin()
+                    .then(function(response) {
+
+                        var balance = JSON.parse(response.data.toString());
+                        var marginBalance = (balance.marginBalance / 1e8);//.toFixed(4);
+                        var unrealisedPnl = (balance.unrealisedPnl / 1e8);//.toFixed(4);
+                        var walletBalance = (balance.walletBalance / 1e8);//.toFixed(4);
+                        var maintMargin = (balance.maintMargin / 1e8);//.toFixed(4);
+                        //var walletBalance = (balance.walletBalance / 1e8).toFixed(4);
+                        var availableMargin = (balance.availableMargin / 1e8);//.toFixed(4);
+                        
+
+                        msgtext = "BITMEX Balance for "+account.name+":\n\n";
+                        msgtext = msgtext + "Wallet Balance: "+walletBalance+"\n";
+                        msgtext = msgtext + "Unrealised PNL: "+unrealisedPnl+"\n";
+                        msgtext = msgtext + "Margin Balance: "+marginBalance+" ("+(balance.marginBalancePcnt*100)+"%)\n";
+                        msgtext = msgtext + "Position Margin: "+maintMargin+"\n";
+                        
+                        //msgtext = msgtext + "Order Margin: "+marginBalance+"\n";
+                        
+                        msgtext = msgtext + "Available Margin: "+availableMargin+"\n";
+
+                        console.log(balance);
+
+                        msgtext = "<pre>" + msgtext + "</pre>";
+
+                        bot.sendMessage(msg.chat.id,text=msgtext,{parse_mode : "HTML"})
+                        //bot.sendMessage(msg.chat.id,msgtext);
+                    })
+                    .catch(function(e) {
+                        // Error handling...
+                        console.log('Error:', e.statusText);
+                    });
+                }).catch(function(e) {
+                    console.error("Unable to connect to bitmex:", e);
+                });
+            });
+        }
+        else
+        {
+            reply = "Please add a Bitmex API account first";
             bot.sendMessage(msg.chat.id, reply);
         }
     }
