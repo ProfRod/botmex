@@ -1,0 +1,3801 @@
+{
+  "info": {
+    "_postman_id": "5681180-d40a3dc0-8f1e-4335-bab7-f90cb8dba62d",
+    "name": "It's All Good Here",
+    "description": "It's All Good Here API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "5681180-63224465-0a46-428f-a5ab-f34b49b7c073",
+      "name": "Authentication",
+      "description": "Authentication endpoint",
+      "item": [
+        {
+          "_postman_id": "5681180-2788a841-1195-4786-b808-92b321febdd5",
+          "name": "/authenticate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "Account email address",
+                  "key": "Email",
+                  "type": "text",
+                  "value": "user@domain.coms"
+                },
+                {
+                  "description": "Account password",
+                  "key": "Password",
+                  "type": "text",
+                  "value": "somepassword"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/authenticate",
+            "description": "Authenticate a user's account Email and Password"
+          },
+          "response": [
+            {
+              "id": "5681180-cb88b05c-de79-4684-af3e-045b0836d78a",
+              "name": "Successful Authentication",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "Account email address",
+                      "key": "Email",
+                      "type": "text",
+                      "value": "user@domain.com"
+                    },
+                    {
+                      "description": "Account password",
+                      "key": "Password",
+                      "type": "text",
+                      "value": "somepassword"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/authenticate"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 12:54:18 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "575"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User authenticated successfully\",\n    \"User\": {\n        \"ID\": \"511\",\n        \"Email\": \"user@domain.com\",\n        \"FirstName\": \"john\",\n        \"LastName\": \"doe\",\n        \"VerificationCode\": null,\n        \"ChallengeCode\": null,\n        \"AboutMe\": \"\",\n        \"ImageURL\": \"https://domain.com/image.jpg\",\n        \"Timezone\": \"US/Eastern\",\n        \"TimeMorning\": null,\n        \"TimeNoon\": null,\n        \"TimeNight\": null,\n        \"Status\": \"1\",\n        \"PersonalTracker\": \"0\",\n        \"Birthday\": \"2000-01-01\",\n        \"Country\": \"US\",\n        \"Gender\": \"male\",\n        \"MiddleName\": null,\n        \"JoinDate\": \"2018-10-23 10:48:28\",\n        \"DateJoined\": \"2018-10-23 10:48:28\",\n        \"PositivityPoints\": 0\n    },\n    \"Token\": \"5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP\"\n}"
+            },
+            {
+              "id": "5681180-ac2c5322-ff8c-4c18-b78a-87eb543a8cb8",
+              "name": "Invalid Credentials",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "Account email address",
+                      "key": "Email",
+                      "type": "text",
+                      "value": "user@domain.coms"
+                    },
+                    {
+                      "description": "Account password",
+                      "key": "Password",
+                      "type": "text",
+                      "value": "somepassword"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/authenticate"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 12:57:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "63"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"Email/Password is incorrect\"\n}"
+            }
+          ]
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "5543928b-0dc3-4e45-aa9b-f1b638be1178",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "08f108b8-5c8d-43b9-b896-60ecfeb68770",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_postman_id": "5681180-c0c1ebe1-f406-479c-98c3-ddd558b63dcf",
+      "name": "Users",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "5681180-aef66155-e14d-4748-926b-a1b992f5229a",
+          "name": "/users",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "Email address",
+                  "key": "Email",
+                  "type": "text",
+                  "value": "user@domain.com"
+                },
+                {
+                  "description": "Password",
+                  "key": "Password",
+                  "type": "text",
+                  "value": "somepassword"
+                },
+                {
+                  "key": "FirstName",
+                  "value": "john",
+                  "description": "First name",
+                  "type": "text"
+                },
+                {
+                  "key": "LastName",
+                  "value": "doe",
+                  "description": "Last name",
+                  "type": "text"
+                },
+                {
+                  "key": "Country",
+                  "value": "US",
+                  "description": "Country (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "Birthday",
+                  "value": "2000-01-01",
+                  "description": "Birth date (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "Gender",
+                  "value": "male",
+                  "description": "Gender (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "Timezone",
+                  "value": "US/Eastern",
+                  "description": "Timezone (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "ImageURL",
+                  "value": "https://domain.com/image.jpg",
+                  "description": "Profile Pic URL (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "Status",
+                  "value": "1",
+                  "description": "Registration status (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "Mood",
+                  "value": "2",
+                  "description": "User mood (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "RegCode",
+                  "value": "somecode",
+                  "description": "Registration code (Optional)",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users",
+            "description": "Register user"
+          },
+          "response": [
+            {
+              "id": "5681180-c2ed62b6-1346-4198-9dd2-d46857785e8f",
+              "name": "Sucessful Registration",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "Email address",
+                      "key": "Email",
+                      "type": "text",
+                      "value": "user@domain.com"
+                    },
+                    {
+                      "description": "Password",
+                      "key": "Password",
+                      "type": "text",
+                      "value": "somepassword"
+                    },
+                    {
+                      "key": "FirstName",
+                      "value": "john",
+                      "description": "First name",
+                      "type": "text"
+                    },
+                    {
+                      "key": "LastName",
+                      "value": "doe",
+                      "description": "Last name",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Country",
+                      "value": "US",
+                      "description": "Country (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Birthday",
+                      "value": "2000-01-01",
+                      "description": "Birth date (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Gender",
+                      "value": "male",
+                      "description": "Gender (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Timezone",
+                      "value": "US/Eastern",
+                      "description": "Timezone (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "ImageURL",
+                      "value": "https://domain.com/image.jpg",
+                      "description": "Profile Pic URL (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Status",
+                      "value": "1",
+                      "description": "Registration status (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Mood",
+                      "value": "2",
+                      "description": "User mood (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "RegCode",
+                      "value": "somecode",
+                      "description": "Registration code (Optional)",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 10:48:28 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "572"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User successfully registered\",\n    \"User\": {\n        \"ID\": \"511\",\n        \"Email\": \"user@domain.com\",\n        \"FirstName\": \"john\",\n        \"LastName\": \"doe\",\n        \"VerificationCode\": null,\n        \"ChallengeCode\": null,\n        \"AboutMe\": \"\",\n        \"ImageURL\": \"https://domain.com/image.jpg\",\n        \"Timezone\": \"US/Eastern\",\n        \"TimeMorning\": null,\n        \"TimeNoon\": null,\n        \"TimeNight\": null,\n        \"Status\": \"1\",\n        \"PersonalTracker\": \"0\",\n        \"Birthday\": \"2000-01-01\",\n        \"Country\": \"US\",\n        \"Gender\": \"male\",\n        \"MiddleName\": null,\n        \"JoinDate\": \"2018-10-23 10:48:28\",\n        \"DateJoined\": \"2018-10-23 10:48:28\",\n        \"PositivityPoints\": 0\n    },\n    \"Token\": \"5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP\"\n}"
+            },
+            {
+              "id": "5681180-366c5285-b3e3-407b-98fd-4fe9ddf629a0",
+              "name": "Incomplete/Invalid Registration Data",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "Email address",
+                      "key": "Email",
+                      "type": "text",
+                      "value": "user@domain.com"
+                    },
+                    {
+                      "description": "Password",
+                      "key": "Password",
+                      "type": "text",
+                      "value": "somepassword",
+                      "disabled": true
+                    },
+                    {
+                      "key": "FirstName",
+                      "value": "john",
+                      "description": "First name",
+                      "type": "text"
+                    },
+                    {
+                      "key": "LastName",
+                      "value": "doe",
+                      "description": "Last name",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Country",
+                      "value": "US",
+                      "description": "Country (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Birthday",
+                      "value": "2000-01-01",
+                      "description": "Birth date (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Gender",
+                      "value": "male",
+                      "description": "Gender (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Timezone",
+                      "value": "US/Eastern",
+                      "description": "Timezone (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "ImageURL",
+                      "value": "https://domain.com/image.jpg",
+                      "description": "Profile Pic URL (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Status",
+                      "value": "1",
+                      "description": "Registration status (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Mood",
+                      "value": "2",
+                      "description": "User mood (Optional)",
+                      "type": "text"
+                    },
+                    {
+                      "key": "RegCode",
+                      "value": "somecode",
+                      "description": "Registration code (Optional)",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users"
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "html",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 13:28:06 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/html; charset=UTF-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-dbeffeeb-d119-4e68-9b32-ea08fc7878c5",
+          "name": "/users/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}",
+            "description": "Get a user"
+          },
+          "response": [
+            {
+              "id": "5681180-d5a66430-f63b-45b5-898d-5af08e5fbdfc",
+              "name": "Successful Request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 13:14:14 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "519"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User found\",\n    \"User\": {\n        \"ID\": \"511\",\n        \"Email\": \"user@domain.com\",\n        \"FirstName\": \"john\",\n        \"LastName\": \"doe\",\n        \"VerificationCode\": null,\n        \"ChallengeCode\": null,\n        \"AboutMe\": \"\",\n        \"ImageURL\": \"https://domain.com/image.jpg\",\n        \"Timezone\": \"US/Eastern\",\n        \"TimeMorning\": null,\n        \"TimeNoon\": null,\n        \"TimeNight\": null,\n        \"Status\": \"1\",\n        \"PersonalTracker\": \"0\",\n        \"Birthday\": \"2000-01-01\",\n        \"Country\": \"US\",\n        \"Gender\": \"male\",\n        \"MiddleName\": null,\n        \"JoinDate\": \"2018-10-23 10:48:28\",\n        \"DateJoined\": \"2018-10-23 10:48:28\",\n        \"PositivityPoints\": 0\n    },\n    \"UserSocial\": []\n}"
+            },
+            {
+              "id": "5681180-b6ea5ddd-017d-4944-ae1b-7f3f8d9a3413",
+              "name": "User not found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/5110"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 13:15:20 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "49"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"User not found\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-23482cc2-dad5-43c9-ba4c-33e10f710cbb",
+          "name": "/users/{id}",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "Email address (Optional)",
+                  "key": "Email",
+                  "type": "text",
+                  "value": "user@domain.com"
+                },
+                {
+                  "description": "Password (Optional)",
+                  "key": "Password",
+                  "type": "text",
+                  "value": "somepassword",
+                  "disabled": true
+                },
+                {
+                  "description": "First name (Optional)",
+                  "key": "FirstName",
+                  "type": "text",
+                  "value": "john"
+                },
+                {
+                  "description": "Last name (Optional)",
+                  "key": "LastName",
+                  "type": "text",
+                  "value": "doe"
+                },
+                {
+                  "description": "Country (Optional)",
+                  "key": "Country",
+                  "type": "text",
+                  "value": "US"
+                },
+                {
+                  "description": "Birth date (Optional)",
+                  "key": "Birthday",
+                  "type": "text",
+                  "value": "2000-01-01"
+                },
+                {
+                  "description": "Gender (Optional)",
+                  "key": "Gender",
+                  "type": "text",
+                  "value": "male"
+                },
+                {
+                  "description": "Timezone (Optional)",
+                  "key": "Timezone",
+                  "type": "text",
+                  "value": "US/Eastern"
+                },
+                {
+                  "description": "Profile Pic URL (Optional)",
+                  "key": "ImageURL",
+                  "type": "text",
+                  "value": "https://domain.com/image.jpg"
+                },
+                {
+                  "description": "Registration status (Optional)",
+                  "key": "Status",
+                  "type": "text",
+                  "value": "1"
+                },
+                {
+                  "description": "Join date (Optional)",
+                  "key": "JoinDate",
+                  "type": "text",
+                  "value": "2000-01-01 15:00:00"
+                },
+                {
+                  "description": "Positivity points (Optional)",
+                  "key": "PositivityPoints",
+                  "type": "text",
+                  "value": "1",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}",
+            "description": "Update data of an existing user"
+          },
+          "response": [
+            {
+              "id": "5681180-5e998a10-fa7f-4a64-b530-cb2fcacdfa3a",
+              "name": "Successful user update",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "Email address (Optional)",
+                      "key": "Email",
+                      "type": "text",
+                      "value": "user@domain.com"
+                    },
+                    {
+                      "description": "Password (Optional)",
+                      "key": "Password",
+                      "type": "text",
+                      "value": "somepassword",
+                      "disabled": true
+                    },
+                    {
+                      "description": "First name (Optional)",
+                      "key": "FirstName",
+                      "type": "text",
+                      "value": "john"
+                    },
+                    {
+                      "description": "Last name (Optional)",
+                      "key": "LastName",
+                      "type": "text",
+                      "value": "doe"
+                    },
+                    {
+                      "description": "Country (Optional)",
+                      "key": "Country",
+                      "type": "text",
+                      "value": "US"
+                    },
+                    {
+                      "description": "Birth date (Optional)",
+                      "key": "Birthday",
+                      "type": "text",
+                      "value": "2000-01-01"
+                    },
+                    {
+                      "description": "Gender (Optional)",
+                      "key": "Gender",
+                      "type": "text",
+                      "value": "male"
+                    },
+                    {
+                      "description": "Timezone (Optional)",
+                      "key": "Timezone",
+                      "type": "text",
+                      "value": "US/Eastern"
+                    },
+                    {
+                      "description": "Profile Pic URL (Optional)",
+                      "key": "ImageURL",
+                      "type": "text",
+                      "value": "https://domain.com/image.jpg"
+                    },
+                    {
+                      "description": "Registration status (Optional)",
+                      "key": "Status",
+                      "type": "text",
+                      "value": "1"
+                    },
+                    {
+                      "description": "Join date (Optional)",
+                      "key": "JoinDate",
+                      "type": "text",
+                      "value": "2000-01-01 15:00:00"
+                    },
+                    {
+                      "description": "Positivity points (Optional)",
+                      "key": "PositivityPoints",
+                      "type": "text",
+                      "value": "1",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:28:07 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "516"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User successfully updated\",\n    \"User\": {\n        \"ID\": \"511\",\n        \"Email\": \"user@domain.com\",\n        \"FirstName\": \"john\",\n        \"LastName\": \"doe\",\n        \"VerificationCode\": null,\n        \"ChallengeCode\": \"\",\n        \"AboutMe\": \"\",\n        \"ImageURL\": \"https://domain.com/image.jpg\",\n        \"Timezone\": \"US/Eastern\",\n        \"TimeMorning\": null,\n        \"TimeNoon\": null,\n        \"TimeNight\": null,\n        \"Status\": \"1\",\n        \"PersonalTracker\": \"0\",\n        \"Birthday\": \"2000-01-01\",\n        \"Country\": \"US\",\n        \"Gender\": \"male\",\n        \"MiddleName\": null,\n        \"JoinDate\": \"2000-01-01 15:00:00\",\n        \"DateJoined\": \"2000-01-01 15:00:00\",\n        \"PositivityPoints\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-7ba4efe1-71c1-4999-a951-99ec6498f9c5",
+          "name": "/users/forgotpassword",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "Email",
+                  "value": "user@domain.coms",
+                  "description": "Email address",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/forgotpassword",
+            "description": "Generate reset password request for the specified Email address"
+          },
+          "response": [
+            {
+              "id": "5681180-a5b0745a-fde8-4270-bf23-2a9faaf61077",
+              "name": "Successful forgot password request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Email",
+                      "value": "user@domain.com",
+                      "description": "Email address",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/forgotpassword"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:06:43 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "125"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Code generated\",\n    \"Email\": \"user@domain.com\",\n    \"ChallengeCode\": \"28f7b305d38e2d8beadaf74228a9c659\"\n}"
+            },
+            {
+              "id": "5681180-a1d20bfe-3f8d-423f-9ca0-1b4d47e2e37a",
+              "name": "Invalid Email",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Email",
+                      "value": "user@domain.coms",
+                      "description": "Email address",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/forgotpassword"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:08:13 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "49"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"User not found\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-7a1b988c-1a57-437b-8783-76a9d5b0c7d5",
+          "name": "/users/resetpassword",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "Email",
+                  "value": "user@domain.com",
+                  "description": "Email address",
+                  "type": "text"
+                },
+                {
+                  "key": "Code",
+                  "value": "28f7b305d38e2d8beadaf74228a9c659",
+                  "description": "Challenge code from in email",
+                  "type": "text"
+                },
+                {
+                  "key": "Password",
+                  "value": "newpassword",
+                  "description": "New password",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/resetpassword",
+            "description": "Reset user's password using challenge code"
+          },
+          "response": [
+            {
+              "id": "5681180-4efb4280-8ada-4622-b6b0-e20971c0d4ea",
+              "name": "Successful password reset",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Email",
+                      "value": "user@domain.com",
+                      "description": "Email address",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Code",
+                      "value": "28f7b305d38e2d8beadaf74228a9c659",
+                      "description": "Challenge code from in email",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Password",
+                      "value": "newpassword",
+                      "description": "New password",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/resetpassword"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:18:49 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "63"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Password successfully updated\"\n}"
+            },
+            {
+              "id": "5681180-4ffacaea-5173-4bd5-b11e-5b0c0c7a7257",
+              "name": "Invalid challenge code",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Email",
+                      "value": "user@domain.com",
+                      "description": "Email address",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Code",
+                      "value": "28f7b305d38e2d8beadaf74228a9c659",
+                      "description": "Challenge code from in email",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Password",
+                      "value": "newpassword",
+                      "description": "New password",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/resetpassword"
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:19:23 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "57"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"Invalid challenge code\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-0713ae3c-0b31-47b6-8dbf-aca204ae7ecf",
+          "name": "/users/verify",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "Email",
+                  "value": "user@domain.com",
+                  "description": "Email address",
+                  "type": "text"
+                },
+                {
+                  "key": "VerificationCode",
+                  "value": "5868ae51a2ff6c2bd7a1e950c2856033",
+                  "description": "Verification code",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/verify",
+            "description": "Verify user using verification code from email address"
+          },
+          "response": [
+            {
+              "id": "5681180-e76035fa-265a-4a9c-b82e-ff70a09eac9b",
+              "name": "Sucessful verification",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Email",
+                      "value": "user@domain.com",
+                      "description": "Email address",
+                      "type": "text"
+                    },
+                    {
+                      "key": "VerificationCode",
+                      "value": "5868ae51a2ff6c2bd7a1e950c2856033",
+                      "description": "Verification code",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/verify"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:48:06 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "61"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Email successfully verified\"\n}"
+            },
+            {
+              "id": "5681180-5c8fb7cf-942d-46a4-b1bf-cf0b7df629c0",
+              "name": "Failed verification",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Email",
+                      "value": "user@domain.com",
+                      "description": "Email address",
+                      "type": "text"
+                    },
+                    {
+                      "key": "VerificationCode",
+                      "value": "5868ae51a2ff6c2bd7a1e950c2856033",
+                      "description": "Verification code",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/verify"
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 14:48:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"Email verification failed\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-94a1e6cd-61f0-4a1b-9cf5-8940a02f1e77",
+          "name": "/users/{id}/positivitypoints",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Quantity",
+                  "value": "1",
+                  "description": "Points to add",
+                  "type": "text"
+                },
+                {
+                  "key": "Action",
+                  "value": "increment",
+                  "description": "Action to perform (Optional)",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/positivitypoints",
+            "description": "Add to user's positivity points"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-cca73a87-3e4a-498b-8198-864c09f5ba7a",
+          "name": "/users/{id}/following?UserID={followerid}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/following?UserID={followerid}",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "{id}",
+                "following"
+              ],
+              "query": [
+                {
+                  "key": "UserID",
+                  "value": "{followerid}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "Check if User (id) is being followed by User (followerId)"
+          },
+          "response": [
+            {
+              "id": "5681180-2f862933-a352-46eb-81a2-99808d2bc9fe",
+              "name": "Successful check - not following",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/following?UserID=111",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "511",
+                    "following"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "111",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 15:04:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "79"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User following result found\",\n    \"Following\": false\n}"
+            },
+            {
+              "id": "5681180-50e886f8-7da7-4848-bd79-da0d9eaa5c51",
+              "name": "Sucessful check - following",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/following?UserID=111",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "511",
+                    "following"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "111",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:18:38 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "78"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User following result found\",\n    \"Following\": true\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-cbf4e911-8cbc-45bd-864a-1f6c258a36ed",
+          "name": "/users/{id}/follow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "UserID",
+                  "value": "111",
+                  "description": "Id of the user that will follow the specified user",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/follow",
+            "description": "Follow user"
+          },
+          "response": [
+            {
+              "id": "5681180-0ab68b3c-d6cb-486a-8327-754c1d6bed3a",
+              "name": "Successful follow",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "111",
+                      "description": "Id of the user that will follow the specified user",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/follow"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:16:27 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "56"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Follow user successful\"\n}"
+            },
+            {
+              "id": "5681180-1c0fd45b-678a-445b-8ecd-4a9710c6fb65",
+              "name": "Invalid follow",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "111",
+                      "description": "Id of the user that will follow the specified user",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/5110/follow"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:17:22 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "49"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"User not found\"\n}"
+            },
+            {
+              "id": "5681180-b7c1687e-10ef-48c0-9db3-2f08cb1cf7e8",
+              "name": "Incomplete parameters",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "111",
+                      "description": "Id of the user that will follow the specified user",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/follow"
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:17:52 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "80"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"Missing UserID, check the request parameters.\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-f15f71b6-01ce-42f3-9acf-55912134808c",
+          "name": "/users/{id}/unfollow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "UserID",
+                  "value": "111",
+                  "description": "Id of the user that will unfollow the specified user",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/unfollow",
+            "description": "Unfollow user"
+          },
+          "response": [
+            {
+              "id": "5681180-cd8d585b-833d-4fcc-9980-184f6280ff6e",
+              "name": "Sucessful unfollow",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "111",
+                      "description": "Id of the user that will unfollow the specified user",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/unfollow"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:23:47 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "58"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Unfollow user successful\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-00e13eae-9145-46cc-95c7-781a9c41f875",
+          "name": "/users/{id}/followers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/followers?CountOnly=0",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "{id}",
+                "followers"
+              ],
+              "query": [
+                {
+                  "key": "CountOnly",
+                  "value": "0",
+                  "equals": true,
+                  "description": "Flag to specify if value returned is just follower count (Optional) "
+                }
+              ]
+            },
+            "description": "Get a user's followers"
+          },
+          "response": [
+            {
+              "id": "5681180-58642f21-d127-408f-b80b-00cbb4d42dae",
+              "name": "User's followers found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followers"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:49:48 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "86"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=98"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User followers found\",\n    \"Followers\": [\n        \"111\",\n        \"118\",\n        \"122\"\n    ]\n}"
+            },
+            {
+              "id": "5681180-785e013b-e52b-4ee7-8fc1-17e7e2f3bbca",
+              "name": "User has no followers",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followers"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:51:33 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "59"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"User followers not found\"\n}"
+            },
+            {
+              "id": "5681180-6eb8fe6e-4f75-41b9-9752-53f82b09f8b6",
+              "name": "Successful - Follower count only",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/followers?CountOnly=0",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "{id}",
+                    "followers"
+                  ],
+                  "query": [
+                    {
+                      "key": "CountOnly",
+                      "value": "0",
+                      "equals": true,
+                      "description": "Flag to specify if value returned is just a count of followers (Optional) "
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:58:39 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "68"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"User followers found\",\n    \"Followers\": 3\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-792628a8-2769-4f69-8ec2-37f83df084b8",
+          "name": "/users/{id}/followed",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/followed?CountOnly=0",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "{id}",
+                "followed"
+              ],
+              "query": [
+                {
+                  "key": "CountOnly",
+                  "value": "0",
+                  "equals": true,
+                  "description": "Flag to specify if value returned is just followed count (Optional) "
+                }
+              ]
+            },
+            "description": "Get all users followed by specified user"
+          },
+          "response": [
+            {
+              "id": "5681180-4c0b1c25-7392-47a8-a177-374aa248ff16",
+              "name": "No followed users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followed"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:54:16 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "59"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"Followed users not found\"\n}"
+            },
+            {
+              "id": "5681180-246597c8-34dc-442f-b914-981b2f80d2aa",
+              "name": "Followed users found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followed"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 16:54:59 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "73"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=99"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Followed users found\",\n    \"Followed\": [\n        \"111\"\n    ]\n}"
+            },
+            {
+              "id": "5681180-12ef7daf-b69a-4850-bebd-1edbfbc6897e",
+              "name": "Successful followed count",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followed?CountOnly=1",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "511",
+                    "followed"
+                  ],
+                  "query": [
+                    {
+                      "key": "CountOnly",
+                      "value": "1",
+                      "equals": true,
+                      "description": "Flag to specify if value returned is just followed count (Optional) "
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 17:01:01 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "67"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Followed users found\",\n    \"Followed\": 1\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-333f16d2-4893-471e-9a98-b2eafa422de5",
+          "name": "/usermoods",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "description": "User ID",
+                  "type": "text"
+                },
+                {
+                  "key": "Mood",
+                  "value": "2",
+                  "description": "Mood",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods",
+            "description": "Set a user's mood"
+          },
+          "response": [
+            {
+              "id": "5681180-efc53dd6-71d3-416f-9089-ccc860a272b5",
+              "name": "Set Mood Successful",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "description": "User ID",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Mood",
+                      "value": "2",
+                      "description": "Mood",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 23:23:45 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "145"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserMood successfully added\",\n    \"UserMood\": {\n        \"ID\": \"6\",\n        \"UserID\": \"511\",\n        \"Mood\": \"2\",\n        \"DateUpdated\": \"2018-10-23 23:23:45\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-aec4653a-12bf-40a1-b459-e08fd1d0c76d",
+          "name": "/usermoods/latest/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods/latest/511",
+            "description": "Get the user's latest mood"
+          },
+          "response": [
+            {
+              "id": "5681180-cd7b906b-7473-4f68-a24a-a5f0580cfee1",
+              "name": "Successful get latest mood ",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods/latest/511"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 23:28:00 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "132"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserMood found\",\n    \"UserMood\": {\n        \"ID\": \"6\",\n        \"UserID\": \"511\",\n        \"Mood\": \"2\",\n        \"DateUpdated\": \"2018-10-23 23:23:45\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-dfd19dd1-dbe6-4525-a36f-a65b1c33059a",
+          "name": "/usermoods",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods?UserID=511&StartDate=2018-01-01 00:00:00&EndDate=2018-11-01 00:00:00",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "usermoods"
+              ],
+              "query": [
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "equals": true,
+                  "description": "User ID"
+                },
+                {
+                  "key": "StartDate",
+                  "value": "2018-01-01 00:00:00",
+                  "equals": true,
+                  "description": "Start Date (Optional)"
+                },
+                {
+                  "key": "EndDate",
+                  "value": "2018-11-01 00:00:00",
+                  "equals": true,
+                  "description": "End Date (Optional)"
+                }
+              ]
+            },
+            "description": "Get user's mood history"
+          },
+          "response": [
+            {
+              "id": "5681180-c26d8d25-5e7e-4122-9c8d-098bca9fc9f4",
+              "name": "Mood history fetched",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods?UserID=511&StartDate=2018-01-01 00:00:00&EndDate=2018-11-01 00:00:00",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "usermoods"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "equals": true,
+                      "description": "User ID"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "2018-01-01 00:00:00",
+                      "equals": true,
+                      "description": "Start Date (Optional)"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "2018-11-01 00:00:00",
+                      "equals": true,
+                      "description": "End Date (Optional)"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 23:32:09 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "209"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserMoods found\",\n    \"UserMoods\": [\n        {\n            \"ID\": \"6\",\n            \"UserID\": \"511\",\n            \"Mood\": \"2\",\n            \"DateUpdated\": \"2018-10-23 23:23:45\"\n        },\n        {\n            \"ID\": \"5\",\n            \"UserID\": \"511\",\n            \"Mood\": \"2\",\n            \"DateUpdated\": \"2018-10-23 10:48:28\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-722756c7-7576-4071-988e-13ac57d5224d",
+          "name": "/users/{id}/favorites",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/favorites?TypeID=1",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "511",
+                "favorites"
+              ],
+              "query": [
+                {
+                  "key": "TypeID",
+                  "value": "1",
+                  "description": "Favorite Type ID",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "Get user's favorites"
+          },
+          "response": [
+            {
+              "id": "5681180-27c23f6c-7532-423e-8c9a-c29010540e7a",
+              "name": "No user favorites",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/favorites?TypeID=1",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "511",
+                    "favorites"
+                  ],
+                  "query": [
+                    {
+                      "key": "TypeID",
+                      "value": "1",
+                      "equals": true,
+                      "description": "Favorite Type ID"
+                    }
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 23 Oct 2018 23:57:21 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "62"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"No UserFavorites were found\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-7d80a0f2-f117-4b82-a24b-d4ed52a15b94",
+          "name": "/userfavorites",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "description": "User ID",
+                  "type": "text"
+                },
+                {
+                  "key": "TypeID",
+                  "value": "1",
+                  "description": "Favorite Type ID",
+                  "type": "text"
+                },
+                {
+                  "key": "FavoriteID",
+                  "value": "1",
+                  "description": "Item ID",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites",
+            "description": "Toggle user favorite status of item"
+          },
+          "response": [
+            {
+              "id": "5681180-e3689eec-1b95-4550-8c5f-9bbcf2d373b8",
+              "name": "Successful toggle",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "description": "User ID",
+                      "type": "text"
+                    },
+                    {
+                      "key": "TypeID",
+                      "value": "1",
+                      "description": "Favorite Type ID",
+                      "type": "text"
+                    },
+                    {
+                      "key": "FavoriteID",
+                      "value": "71",
+                      "description": "Item ID",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 00:03:30 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "72"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Item added to favorites\",\n    \"Action\": \"Add\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-70c0e05c-09b1-487c-9e1f-491a1107453e",
+          "name": "/userfavorites",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites?UserID=511&TypeID=1&FavoriteID=71",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "userfavorites"
+              ],
+              "query": [
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "type": "text",
+                  "description": "User ID"
+                },
+                {
+                  "key": "TypeID",
+                  "value": "1",
+                  "type": "text",
+                  "description": "Favorite Type ID"
+                },
+                {
+                  "key": "FavoriteID",
+                  "value": "71",
+                  "type": "text",
+                  "description": "Item ID"
+                }
+              ]
+            },
+            "description": "Check if item is part of user's favorites"
+          },
+          "response": [
+            {
+              "id": "5681180-5478ebb7-c333-46eb-9ffd-30eb330f0d7a",
+              "name": "Item is favorite",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites?UserID=511&TypeID=1&FavoriteID=71",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "userfavorites"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "equals": true,
+                      "description": "User ID"
+                    },
+                    {
+                      "key": "TypeID",
+                      "value": "1",
+                      "equals": true,
+                      "description": "Favorite Type ID"
+                    },
+                    {
+                      "key": "FavoriteID",
+                      "value": "71",
+                      "equals": true,
+                      "description": "Item ID"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 00:07:15 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "50"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Item is favorite\"\n}"
+            },
+            {
+              "id": "5681180-a71dc4b8-22d5-477d-a7c8-20b84638c8d3",
+              "name": "Item is not favorite",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites?UserID=511&TypeID=1&FavoriteID=72",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "userfavorites"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "equals": true,
+                      "description": "User ID"
+                    },
+                    {
+                      "key": "TypeID",
+                      "value": "1",
+                      "equals": true,
+                      "description": "Favorite Type ID"
+                    },
+                    {
+                      "key": "FavoriteID",
+                      "value": "72",
+                      "equals": true,
+                      "description": "Item ID"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 00:08:07 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "57"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"Item is not a favorite\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-276e11de-daac-4788-bf64-8b5b67de306e",
+          "name": "/users/search?Query={search}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/search?Query=user@domain.com",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "Query",
+                  "value": "user@domain.com",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "User search"
+          },
+          "response": [
+            {
+              "id": "5681180-61476df9-2765-4098-921f-80c4f9f411b3",
+              "name": "Empty search",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/search?Query=someuser",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "search"
+                  ],
+                  "query": [
+                    {
+                      "key": "Query",
+                      "value": "someuser",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 00:10:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "54"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"No users were found\"\n}"
+            },
+            {
+              "id": "5681180-6c23e57b-565c-4d1b-8a51-406e27686b29",
+              "name": "Successful search",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/search?Query=user@domain.com",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "search"
+                  ],
+                  "query": [
+                    {
+                      "key": "Query",
+                      "value": "user@domain.com",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 00:26:33 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "182"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Users found\",\n    \"Users\": [\n        {\n            \"ID\": \"511\",\n            \"FirstName\": \"john\",\n            \"LastName\": \"doe\",\n            \"JoinDate\": \"2000-01-01 15:00:00\",\n            \"ImageURL\": \"https://domain.com/image.jpg\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_postman_id": "5681180-436a7c01-27d9-42ce-8b9a-ac67f9b2ac8c",
+      "name": "Challenges",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "5681180-f79d7e35-6d6b-46f0-b9d3-d26aa7e9004f",
+          "name": "/challenges",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "Name",
+                  "value": "My Test Challenge",
+                  "type": "text",
+                  "description": "Challenge Name"
+                },
+                {
+                  "key": "Instruction",
+                  "value": "Do this and that",
+                  "type": "text",
+                  "description": "Overall Instructions"
+                },
+                {
+                  "key": "ThumbnailURL",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg",
+                  "type": "text",
+                  "description": "Thumbnail URL"
+                },
+                {
+                  "key": "ImageURL",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg",
+                  "type": "text",
+                  "description": "Full Image URL"
+                },
+                {
+                  "key": "WelcomeMessage",
+                  "value": " Welcome Message",
+                  "type": "text",
+                  "description": " Welcome Message for the Challenge"
+                },
+                {
+                  "key": "CategoryID",
+                  "value": " 394",
+                  "type": "text",
+                  "description": "Category ID"
+                },
+                {
+                  "key": "TypeID",
+                  "value": " 1",
+                  "type": "text",
+                  "description": "Challenge Type ID"
+                },
+                {
+                  "key": "Frequency",
+                  "value": " daily",
+                  "type": "text",
+                  "description": "Milestone frequency"
+                },
+                {
+                  "key": "DateCreated",
+                  "value": " 2018-07-01 00:00:00",
+                  "type": "text",
+                  "description": "Creation Date (Optional)"
+                },
+                {
+                  "key": "DayCount",
+                  "value": " 5",
+                  "type": "text",
+                  "description": "Number of milestones (Optional)"
+                },
+                {
+                  "key": "Status",
+                  "value": " 1",
+                  "type": "text",
+                  "description": "Challenge Status (Optional)"
+                },
+                {
+                  "key": "ScienceBehind",
+                  "value": " Text",
+                  "type": "text",
+                  "description": "Science behind the challenge (Optional)"
+                },
+                {
+                  "key": "VideoInstruction",
+                  "value": "",
+                  "type": "text",
+                  "description": "Video instruction URL (Optional)"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges",
+            "description": "Create a challenge"
+          },
+          "response": [
+            {
+              "id": "5681180-9afc4d2f-a74b-4dd1-82e6-0bf6e7b2f8eb",
+              "name": "Challenge created",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Name",
+                      "value": "My Test Challenge",
+                      "type": "text",
+                      "description": "Challenge Name"
+                    },
+                    {
+                      "key": "Instruction",
+                      "value": "Do this and that",
+                      "type": "text",
+                      "description": "Overall Instructions"
+                    },
+                    {
+                      "key": "ThumbnailURL",
+                      "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg",
+                      "type": "text",
+                      "description": "Thumbnail URL"
+                    },
+                    {
+                      "key": "ImageURL",
+                      "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg",
+                      "type": "text",
+                      "description": "Full Image URL"
+                    },
+                    {
+                      "key": "WelcomeMessage",
+                      "value": " Welcome Message",
+                      "type": "text",
+                      "description": " Welcome Message for the Challenge"
+                    },
+                    {
+                      "key": "CategoryID",
+                      "value": " 394",
+                      "type": "text",
+                      "description": "Category ID"
+                    },
+                    {
+                      "key": "TypeID",
+                      "value": " 1",
+                      "type": "text",
+                      "description": "Challenge Type ID"
+                    },
+                    {
+                      "key": "Frequency",
+                      "value": " daily",
+                      "type": "text",
+                      "description": "Milestone frequency"
+                    },
+                    {
+                      "key": "DateCreated",
+                      "value": " 2018-07-01 00:00:00",
+                      "type": "text",
+                      "description": "Creation Date (Optional)",
+                      "disabled": true
+                    },
+                    {
+                      "key": "DayCount",
+                      "value": " 5",
+                      "type": "text",
+                      "description": "Number of milestones (Optional)",
+                      "disabled": true
+                    },
+                    {
+                      "key": "Status",
+                      "value": " 1",
+                      "type": "text",
+                      "description": "Challenge Status (Optional)",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ScienceBehind",
+                      "value": " Text",
+                      "type": "text",
+                      "description": "Science behind the challenge (Optional)",
+                      "disabled": true
+                    },
+                    {
+                      "key": "VideoInstruction",
+                      "value": "",
+                      "type": "text",
+                      "description": "Video instruction URL (Optional)",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 07:36:16 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "737"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Challenge successfully added\",\n    \"Challenge\": {\n        \"ID\": \"51\",\n        \"Name\": \"My Test Challenge\",\n        \"TokenCount\": \"1\",\n        \"DateCreated\": \"2018-10-24 07:36:16\",\n        \"ParentID\": null,\n        \"WorkspaceID\": \"1\",\n        \"Instruction\": \"Do this and that\",\n        \"VideoInstruction\": null,\n        \"AvatarURL\": \"//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg\",\n        \"WelcomeMessage\": \"Welcome Message\",\n        \"Status\": \"1\",\n        \"DayCount\": \"0\",\n        \"CategoryID\": \"394\",\n        \"TotalCount\": \"0\",\n        \"JoinCount\": \"0\",\n        \"OngoingCount\": \"0\",\n        \"TypeID\": \"1\",\n        \"ScienceBehind\": null,\n        \"Frequency\": \"daily\",\n        \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg\",\n        \"Days\": \"0\",\n        \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/braintrainers/5tothrivechallenge.jpg\",\n        \"Instructions\": []\n    }\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "d34eca23-ce8f-4198-a1ab-2d2ae579fc61",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "bd80a1d6-6016-480c-a577-8ae6446e0d17",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
