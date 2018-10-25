@@ -2634,7 +2634,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods/latest/511",
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods/latest/{id}",
             "description": "Get the user's latest mood"
           },
           "response": [
@@ -2855,7 +2855,7 @@
               "raw": ""
             },
             "url": {
-              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/favorites?TypeID=1",
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/favorites?TypeID=1",
               "protocol": "https",
               "host": [
                 "allgoodapi",
@@ -2866,15 +2866,15 @@
                 "api",
                 "v1",
                 "users",
-                "511",
+                "{id}",
                 "favorites"
               ],
               "query": [
                 {
                   "key": "TypeID",
                   "value": "1",
-                  "description": "Favorite Type ID",
-                  "type": "text"
+                  "equals": true,
+                  "description": "Favorite Type ID"
                 }
               ]
             },
@@ -3940,7 +3940,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges/28",
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges/{id}",
             "description": "Get a specific challenge\n\nIf the UserID parameter is supplied, this call will look for active brain trainers of the User for this challenge"
           },
           "response": [
@@ -4074,6 +4074,849 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Challenge found\",\n    \"Challenge\": {\n        \"ID\": \"28\",\n        \"Name\": \"I Have... Challenge\",\n        \"TokenCount\": \"1\",\n        \"DateCreated\": \"2015-01-02 16:18:41\",\n        \"ParentID\": null,\n        \"WorkspaceID\": \"1\",\n        \"Instruction\": \"Your challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. A link to the online Challenge Journal will be automatically sent to you every day in your email.\\n\\nWhat we have learned from people at the very end of their lives is that they wished they had appreciated the simple things they had in their lives. The best things in life are truly free, though we often don't realize that until it's too late!\\n\\nThis challenge is about taking the time to notice ALL that you have and really appreciating it. And if you find yourself thinking about what you don't have, try to bring your mind back to all you do have. When you do, you'll start training your brain to focus on the good, and you'll find yourself feeling a lot better.\\n\\n\",\n        \"VideoInstruction\": null,\n        \"AvatarURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n        \"WelcomeMessage\": \"Sometimes we focus on what we don't have, and it makes us feel bad. See what happens when we focus on what we do have instead!\",\n        \"Status\": \"1\",\n        \"DayCount\": \"21\",\n        \"CategoryID\": \"394\",\n        \"TotalCount\": \"6\",\n        \"JoinCount\": \"0\",\n        \"OngoingCount\": \"6\",\n        \"TypeID\": \"1\",\n        \"ScienceBehind\": null,\n        \"Frequency\": \"daily\",\n        \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n        \"Days\": \"21\",\n        \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n        \"Instructions\": [\n            {\n                \"ID\": \"1\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"1\",\n                \"MilestoneInstructions\": \"Welcome to Day 1 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou've heard it before: the best things in life are free but it is so easy to forget that.  You can boost your happiness levels when you take a few minutes every day to notice and jot down all the things you have.\",\n                \"EmailInstructions\": \"Welcome to Day 1 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou've heard it before: the best things in life are free but it is so easy to forget that.  You can boost your happiness levels when you take a few minutes every day to notice and jot down all the things you have.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"2\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"2\",\n                \"MilestoneInstructions\": \"Welcome to Day 2 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nResearchers have found that taking just two minutes a day to write about positive things in our lives trains our brains to regularly scan our environment for positivity, which then makes us happier!\",\n                \"EmailInstructions\": \"Welcome to Day 2 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nResearchers have found that taking just two minutes a day to write about positive things in our lives trains our brains to regularly scan our environment for positivity, which then makes us happier!\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"3\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"3\",\n                \"MilestoneInstructions\": \"Welcome to Day 3 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWe know that what we focus on grows. If we focus on all that we don't have, our feelings of discontent and discouragement will grow. If we focus on all that we have, our feelings of abundance and happiness will grow.\",\n                \"EmailInstructions\": \"Welcome to Day 3 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWe know that what we focus on grows. If we focus on all that we don't have, our feelings of discontent and discouragement will grow. If we focus on all that we have, our feelings of abundance and happiness will grow.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"4\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"4\",\n                \"MilestoneInstructions\": \"Welcome to Day 4 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nEvery time you focus on something that you don't have and you start to feel bad, interrupt that thought and think of something you do have. Choose to feel good.\",\n                \"EmailInstructions\": \"Welcome to Day 4 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nEvery time you focus on something that you don't have and you start to feel bad, interrupt that thought and think of something you do have. Choose to feel good.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"5\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"5\",\n                \"MilestoneInstructions\": \"Welcome to Day 5 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nNo doubt we can all find things that aren't going well in our lives, but if we focus on these things, we will get anxious, panicky, jealous of others who \\\"seem to have more,\\\" and we will feel like we are in a state of lack.  But when we focus on everything that is going well in our lives, we feel optimistic, relaxed, encouraged, full of abundance.\\n\\nIf I had to choose, I'd focus on the positive!  How about you?\",\n                \"EmailInstructions\": \"Welcome to Day 5 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nNo doubt we can all find things that aren't going well in our lives, but if we focus on these things, we will get anxious, panicky, jealous of others who \\\"seem to have more,\\\" and we will feel like we are in a state of lack.  But when we focus on everything that is going well in our lives, we feel optimistic, relaxed, encouraged, full of abundance.\\n\\nIf I had to choose, I'd focus on the positive!  How about you?\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"6\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"6\",\n                \"MilestoneInstructions\": \"Welcome to Day 6 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou are doing some real mental muscle building to focus on what is good in your life.  This challenge is going to help you feel more optimistic, hopeful, relaxed and happy. The more you do this, the more it will become a way of being and a way of life!  It'll get easier to do too!\",\n                \"EmailInstructions\": \"Welcome to Day 6 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou are doing some real mental muscle building to focus on what is good in your life.  This challenge is going to help you feel more optimistic, hopeful, relaxed and happy. The more you do this, the more it will become a way of being and a way of life!  It'll get easier to do too!\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"7\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"7\",\n                \"MilestoneInstructions\": \"Welcome to Day 7 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nGo ahead and focus on all the good things you have, and not just the material things.  It's so easy to forget to appreciate how far you've come and the good things you have brought into your life.  This is the time to remember!\",\n                \"EmailInstructions\": \"Welcome to Day 7 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nGo ahead and focus on all the good things you have, and not just the material things.  It's so easy to forget to appreciate how far you've come and the good things you have brought into your life.  This is the time to remember!\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"8\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"8\",\n                \"MilestoneInstructions\": \"Welcome to Day 8 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWhat you appreciate, appreciates!  The more you focus on the good sides of your family, your friend , your job, or your significant other, the more good will come back to you.\",\n                \"EmailInstructions\": \"Welcome to Day 8 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWhat you appreciate, appreciates!  The more you focus on the good sides of your family, your friend , your job, or your significant other, the more good will come back to you.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"9\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"9\",\n                \"MilestoneInstructions\": \"Welcome to Day 9 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 9 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"10\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"10\",\n                \"MilestoneInstructions\": \"Welcome to Day 10 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 10 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"11\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"11\",\n                \"MilestoneInstructions\": \"Welcome to Day 11 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 11 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"12\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"12\",\n                \"MilestoneInstructions\": \"Welcome to Day 12 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 12 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"13\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"13\",\n                \"MilestoneInstructions\": \"Welcome to Day 13 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 13 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"14\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"14\",\n                \"MilestoneInstructions\": \"Welcome to Day 14 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 14 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"15\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"15\",\n                \"MilestoneInstructions\": \"Welcome to Day 15 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 15 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"16\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"16\",\n                \"MilestoneInstructions\": \"Welcome to Day 16 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 16 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"17\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"17\",\n                \"MilestoneInstructions\": \"Welcome to Day 17 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 17 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"18\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"18\",\n                \"MilestoneInstructions\": \"Welcome to Day 18 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 18 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"19\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"19\",\n                \"MilestoneInstructions\": \"Welcome to Day 19 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 19 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"20\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"20\",\n                \"MilestoneInstructions\": \"Welcome to Day 20 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 20 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            },\n            {\n                \"ID\": \"21\",\n                \"ChallengeID\": \"28\",\n                \"MilestoneIndex\": \"21\",\n                \"MilestoneInstructions\": \"Welcome to Day 21 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"EmailInstructions\": \"Welcome to Day 21 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                \"ExtraData\": \"\",\n                \"TypeID\": \"1\"\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-aac76bb3-7ef8-4473-b613-ccb8a85765b5",
+          "name": "/userchallenges",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges?UserID=511&Status=2&ChallengeID=28",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "userchallenges"
+              ],
+              "query": [
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "equals": true,
+                  "description": "User ID (Optional)"
+                },
+                {
+                  "key": "Status",
+                  "value": "2",
+                  "equals": true,
+                  "description": "User Challenge Status (Optional)"
+                },
+                {
+                  "key": "ChallengeID",
+                  "value": "28",
+                  "equals": true,
+                  "description": "Challenge ID (Optional)"
+                }
+              ]
+            },
+            "description": "Get user challenges\n\nThe following params can be used as filter:\n\nUserID<br />\nChallengeID<br />\nStatus<br />\nIncludeChallenge<br />"
+          },
+          "response": [
+            {
+              "id": "5681180-2330ab10-9fec-4091-b58b-2203b9013597",
+              "name": "User challenge not found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges?UserID=511&Status=2&ChallengeID=28",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "userchallenges"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "equals": true,
+                      "description": "User ID (Optional)"
+                    },
+                    {
+                      "key": "Status",
+                      "value": "2",
+                      "equals": true,
+                      "description": "User Challenge Status (Optional)"
+                    },
+                    {
+                      "key": "ChallengeID",
+                      "value": "28",
+                      "equals": true,
+                      "description": "Challenge ID (Optional)"
+                    }
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:01:40 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "63"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"No UserChallenges were found\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-d43c2765-d13a-43a6-8e79-b83c48728132",
+          "name": "/userchallenges",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "UserID",
+                  "value": " 511",
+                  "type": "text",
+                  "description": "User ID"
+                },
+                {
+                  "key": "ChallengeID",
+                  "value": "28",
+                  "type": "text",
+                  "description": "Challenge ID"
+                },
+                {
+                  "key": "DateJoined",
+                  "value": " 2018-07-01 00:00:00",
+                  "type": "text",
+                  "description": "Date Joined"
+                },
+                {
+                  "key": "DateStarted",
+                  "value": " 2018-07-01 00:00:00",
+                  "type": "text",
+                  "description": "Date Started"
+                },
+                {
+                  "key": "Status",
+                  "value": " 2",
+                  "type": "text",
+                  "description": "User Challenge Status"
+                },
+                {
+                  "key": "NotificationTime",
+                  "value": " 0900",
+                  "type": "text",
+                  "description": "Email Notification Time"
+                },
+                {
+                  "key": "ReminderTime",
+                  "value": " 1800",
+                  "type": "text",
+                  "description": "Email Reminder Time"
+                },
+                {
+                  "key": "SkipWeekends",
+                  "value": " 1",
+                  "type": "text",
+                  "description": "Skip Weekend Flag"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges",
+            "description": "Join a challenge"
+          },
+          "response": [
+            {
+              "id": "5681180-d7e17d4f-5214-45bc-be7e-4f89f5529c03",
+              "name": "Join challenge successful",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": " 511",
+                      "type": "text",
+                      "description": "User ID"
+                    },
+                    {
+                      "key": "ChallengeID",
+                      "value": "28",
+                      "type": "text",
+                      "description": "Challenge ID"
+                    },
+                    {
+                      "key": "DateJoined",
+                      "value": " 2018-07-01 00:00:00",
+                      "type": "text",
+                      "description": "Date Joined"
+                    },
+                    {
+                      "key": "DateStarted",
+                      "value": " 2018-07-01 00:00:00",
+                      "type": "text",
+                      "description": "Date Started"
+                    },
+                    {
+                      "key": "Status",
+                      "value": " 2",
+                      "type": "text",
+                      "description": "User Challenge Status"
+                    },
+                    {
+                      "key": "NotificationTime",
+                      "value": " 0900",
+                      "type": "text",
+                      "description": "Email Notification Time"
+                    },
+                    {
+                      "key": "ReminderTime",
+                      "value": " 1800",
+                      "type": "text",
+                      "description": "Email Reminder Time"
+                    },
+                    {
+                      "key": "SkipWeekends",
+                      "value": " 1",
+                      "type": "text",
+                      "description": "Skip Weekend Flag"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:28:21 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserChallenge successfully added\",\n    \"UserChallenge\": {\n        \"ID\": \"5\",\n        \"UserID\": \"511\",\n        \"ChallengeID\": \"28\",\n        \"JournalID\": null,\n        \"DateJoined\": \"2018-07-01 00:00:00\",\n        \"DateStarted\": \"2018-06-30 00:00:00\",\n        \"DateCompleted\": null,\n        \"Status\": \"2\",\n        \"Type\": null,\n        \"Challenge\": {\n            \"ID\": \"28\",\n            \"Name\": \"I Have... Challenge\",\n            \"TokenCount\": \"1\",\n            \"DateCreated\": \"2015-01-02 16:18:41\",\n            \"ParentID\": null,\n            \"WorkspaceID\": \"1\",\n            \"Instruction\": \"Your challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. A link to the online Challenge Journal will be automatically sent to you every day in your email.\\n\\nWhat we have learned from people at the very end of their lives is that they wished they had appreciated the simple things they had in their lives. The best things in life are truly free, though we often don't realize that until it's too late!\\n\\nThis challenge is about taking the time to notice ALL that you have and really appreciating it. And if you find yourself thinking about what you don't have, try to bring your mind back to all you do have. When you do, you'll start training your brain to focus on the good, and you'll find yourself feeling a lot better.\\n\\n\",\n            \"VideoInstruction\": null,\n            \"AvatarURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n            \"WelcomeMessage\": \"Sometimes we focus on what we don't have, and it makes us feel bad. See what happens when we focus on what we do have instead!\",\n            \"Status\": \"1\",\n            \"DayCount\": \"21\",\n            \"CategoryID\": \"394\",\n            \"TotalCount\": \"6\",\n            \"JoinCount\": \"0\",\n            \"OngoingCount\": \"6\",\n            \"TypeID\": \"1\",\n            \"ScienceBehind\": null,\n            \"Frequency\": \"daily\",\n            \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n            \"Days\": \"21\",\n            \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n            \"Instructions\": [\n                {\n                    \"ID\": \"1\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"1\",\n                    \"MilestoneInstructions\": \"Welcome to Day 1 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou've heard it before: the best things in life are free but it is so easy to forget that.  You can boost your happiness levels when you take a few minutes every day to notice and jot down all the things you have.\",\n                    \"EmailInstructions\": \"Welcome to Day 1 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou've heard it before: the best things in life are free but it is so easy to forget that.  You can boost your happiness levels when you take a few minutes every day to notice and jot down all the things you have.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"2\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"2\",\n                    \"MilestoneInstructions\": \"Welcome to Day 2 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nResearchers have found that taking just two minutes a day to write about positive things in our lives trains our brains to regularly scan our environment for positivity, which then makes us happier!\",\n                    \"EmailInstructions\": \"Welcome to Day 2 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nResearchers have found that taking just two minutes a day to write about positive things in our lives trains our brains to regularly scan our environment for positivity, which then makes us happier!\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"3\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"3\",\n                    \"MilestoneInstructions\": \"Welcome to Day 3 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWe know that what we focus on grows. If we focus on all that we don't have, our feelings of discontent and discouragement will grow. If we focus on all that we have, our feelings of abundance and happiness will grow.\",\n                    \"EmailInstructions\": \"Welcome to Day 3 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWe know that what we focus on grows. If we focus on all that we don't have, our feelings of discontent and discouragement will grow. If we focus on all that we have, our feelings of abundance and happiness will grow.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"4\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"4\",\n                    \"MilestoneInstructions\": \"Welcome to Day 4 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nEvery time you focus on something that you don't have and you start to feel bad, interrupt that thought and think of something you do have. Choose to feel good.\",\n                    \"EmailInstructions\": \"Welcome to Day 4 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nEvery time you focus on something that you don't have and you start to feel bad, interrupt that thought and think of something you do have. Choose to feel good.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"5\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"5\",\n                    \"MilestoneInstructions\": \"Welcome to Day 5 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nNo doubt we can all find things that aren't going well in our lives, but if we focus on these things, we will get anxious, panicky, jealous of others who \\\"seem to have more,\\\" and we will feel like we are in a state of lack.  But when we focus on everything that is going well in our lives, we feel optimistic, relaxed, encouraged, full of abundance.\\n\\nIf I had to choose, I'd focus on the positive!  How about you?\",\n                    \"EmailInstructions\": \"Welcome to Day 5 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nNo doubt we can all find things that aren't going well in our lives, but if we focus on these things, we will get anxious, panicky, jealous of others who \\\"seem to have more,\\\" and we will feel like we are in a state of lack.  But when we focus on everything that is going well in our lives, we feel optimistic, relaxed, encouraged, full of abundance.\\n\\nIf I had to choose, I'd focus on the positive!  How about you?\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"6\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"6\",\n                    \"MilestoneInstructions\": \"Welcome to Day 6 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou are doing some real mental muscle building to focus on what is good in your life.  This challenge is going to help you feel more optimistic, hopeful, relaxed and happy. The more you do this, the more it will become a way of being and a way of life!  It'll get easier to do too!\",\n                    \"EmailInstructions\": \"Welcome to Day 6 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou are doing some real mental muscle building to focus on what is good in your life.  This challenge is going to help you feel more optimistic, hopeful, relaxed and happy. The more you do this, the more it will become a way of being and a way of life!  It'll get easier to do too!\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"7\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"7\",\n                    \"MilestoneInstructions\": \"Welcome to Day 7 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nGo ahead and focus on all the good things you have, and not just the material things.  It's so easy to forget to appreciate how far you've come and the good things you have brought into your life.  This is the time to remember!\",\n                    \"EmailInstructions\": \"Welcome to Day 7 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nGo ahead and focus on all the good things you have, and not just the material things.  It's so easy to forget to appreciate how far you've come and the good things you have brought into your life.  This is the time to remember!\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"8\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"8\",\n                    \"MilestoneInstructions\": \"Welcome to Day 8 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWhat you appreciate, appreciates!  The more you focus on the good sides of your family, your friend , your job, or your significant other, the more good will come back to you.\",\n                    \"EmailInstructions\": \"Welcome to Day 8 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWhat you appreciate, appreciates!  The more you focus on the good sides of your family, your friend , your job, or your significant other, the more good will come back to you.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"9\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"9\",\n                    \"MilestoneInstructions\": \"Welcome to Day 9 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 9 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"10\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"10\",\n                    \"MilestoneInstructions\": \"Welcome to Day 10 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 10 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"11\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"11\",\n                    \"MilestoneInstructions\": \"Welcome to Day 11 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 11 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"12\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"12\",\n                    \"MilestoneInstructions\": \"Welcome to Day 12 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 12 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"13\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"13\",\n                    \"MilestoneInstructions\": \"Welcome to Day 13 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 13 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"14\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"14\",\n                    \"MilestoneInstructions\": \"Welcome to Day 14 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 14 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"15\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"15\",\n                    \"MilestoneInstructions\": \"Welcome to Day 15 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 15 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"16\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"16\",\n                    \"MilestoneInstructions\": \"Welcome to Day 16 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 16 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"17\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"17\",\n                    \"MilestoneInstructions\": \"Welcome to Day 17 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 17 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"18\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"18\",\n                    \"MilestoneInstructions\": \"Welcome to Day 18 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 18 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"19\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"19\",\n                    \"MilestoneInstructions\": \"Welcome to Day 19 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 19 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"20\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"20\",\n                    \"MilestoneInstructions\": \"Welcome to Day 20 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 20 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"21\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"21\",\n                    \"MilestoneInstructions\": \"Welcome to Day 21 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 21 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                }\n            ]\n        },\n        \"Milestones\": [\n            {\n                \"ID\": \"33\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-01\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"34\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-02\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"35\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-03\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"36\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-04\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"37\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-05\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"38\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-06\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"39\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-09\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"40\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-10\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"41\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-11\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"42\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-12\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"43\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-13\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"44\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-16\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"45\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-17\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"46\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-18\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"47\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-19\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"48\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-20\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"49\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-23\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"50\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-24\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"51\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-25\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"52\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-26\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"53\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-27\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            }\n        ],\n        \"User\": {\n            \"ID\": \"511\",\n            \"Email\": \"user@domain.com\",\n            \"FirstName\": \"john\",\n            \"LastName\": \"doe\",\n            \"VerificationCode\": \"\",\n            \"ChallengeCode\": \"\",\n            \"AboutMe\": \"\",\n            \"ImageURL\": \"https://domain.com/image.jpg\",\n            \"Timezone\": \"US/Eastern\",\n            \"TimeMorning\": null,\n            \"TimeNoon\": null,\n            \"TimeNight\": null,\n            \"Status\": \"1\",\n            \"PersonalTracker\": \"0\",\n            \"Birthday\": \"2000-01-01\",\n            \"Country\": \"US\",\n            \"Gender\": \"male\",\n            \"MiddleName\": null,\n            \"JoinDate\": \"2000-01-01 15:00:00\",\n            \"DateJoined\": \"2000-01-01 15:00:00\",\n            \"PositivityPoints\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-a2c6fc5f-6d28-4fd2-872b-e3954e279068",
+          "name": "/userchallenges/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/{id}?IncludeChallenge=1",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "userchallenges",
+                "{id}"
+              ],
+              "query": [
+                {
+                  "key": "IncludeChallenge",
+                  "value": "1",
+                  "equals": true,
+                  "description": "Include Challenge (Optional)"
+                }
+              ]
+            },
+            "description": "Get a user challenge\n\nThe following params can be used as filter:\n\nIncludeChallenge<br />"
+          },
+          "response": [
+            {
+              "id": "5681180-8765c35a-590a-4d9d-8de7-c44e91348603",
+              "name": "User challenge not found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges?UserID=511&Status=2&ChallengeID=28",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "userchallenges"
+                  ],
+                  "query": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "equals": true,
+                      "description": "User ID (Optional)"
+                    },
+                    {
+                      "key": "Status",
+                      "value": "2",
+                      "equals": true,
+                      "description": "User Challenge Status (Optional)"
+                    },
+                    {
+                      "key": "ChallengeID",
+                      "value": "28",
+                      "equals": true,
+                      "description": "Challenge ID (Optional)"
+                    }
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:01:40 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "63"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"No UserChallenges were found\"\n}"
+            },
+            {
+              "id": "5681180-c449aef3-4a46-4bf8-93dc-e54433fdf217",
+              "name": "User challenge found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/5?IncludeChallenge=1",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "userchallenges",
+                    "5"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeChallenge",
+                      "value": "1",
+                      "equals": true,
+                      "description": "Include Challenge (Optional)"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:30:48 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserChallenge found\",\n    \"UserChallenge\": {\n        \"ID\": \"5\",\n        \"UserID\": \"511\",\n        \"ChallengeID\": \"28\",\n        \"JournalID\": null,\n        \"DateJoined\": \"2018-07-01 00:00:00\",\n        \"DateStarted\": \"2018-06-30 00:00:00\",\n        \"DateCompleted\": null,\n        \"Status\": \"2\",\n        \"Type\": null,\n        \"Challenge\": {\n            \"ID\": \"28\",\n            \"Name\": \"I Have... Challenge\",\n            \"TokenCount\": \"1\",\n            \"DateCreated\": \"2015-01-02 16:18:41\",\n            \"ParentID\": null,\n            \"WorkspaceID\": \"1\",\n            \"Instruction\": \"Your challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. A link to the online Challenge Journal will be automatically sent to you every day in your email.\\n\\nWhat we have learned from people at the very end of their lives is that they wished they had appreciated the simple things they had in their lives. The best things in life are truly free, though we often don't realize that until it's too late!\\n\\nThis challenge is about taking the time to notice ALL that you have and really appreciating it. And if you find yourself thinking about what you don't have, try to bring your mind back to all you do have. When you do, you'll start training your brain to focus on the good, and you'll find yourself feeling a lot better.\\n\\n\",\n            \"VideoInstruction\": null,\n            \"AvatarURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n            \"WelcomeMessage\": \"Sometimes we focus on what we don't have, and it makes us feel bad. See what happens when we focus on what we do have instead!\",\n            \"Status\": \"1\",\n            \"DayCount\": \"21\",\n            \"CategoryID\": \"394\",\n            \"TotalCount\": \"6\",\n            \"JoinCount\": \"0\",\n            \"OngoingCount\": \"6\",\n            \"TypeID\": \"1\",\n            \"ScienceBehind\": null,\n            \"Frequency\": \"daily\",\n            \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n            \"Days\": \"21\",\n            \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/images/hm-trainer-i_have.jpg\",\n            \"Instructions\": [\n                {\n                    \"ID\": \"1\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"1\",\n                    \"MilestoneInstructions\": \"Welcome to Day 1 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou've heard it before: the best things in life are free but it is so easy to forget that.  You can boost your happiness levels when you take a few minutes every day to notice and jot down all the things you have.\",\n                    \"EmailInstructions\": \"Welcome to Day 1 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou've heard it before: the best things in life are free but it is so easy to forget that.  You can boost your happiness levels when you take a few minutes every day to notice and jot down all the things you have.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"2\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"2\",\n                    \"MilestoneInstructions\": \"Welcome to Day 2 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nResearchers have found that taking just two minutes a day to write about positive things in our lives trains our brains to regularly scan our environment for positivity, which then makes us happier!\",\n                    \"EmailInstructions\": \"Welcome to Day 2 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nResearchers have found that taking just two minutes a day to write about positive things in our lives trains our brains to regularly scan our environment for positivity, which then makes us happier!\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"3\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"3\",\n                    \"MilestoneInstructions\": \"Welcome to Day 3 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWe know that what we focus on grows. If we focus on all that we don't have, our feelings of discontent and discouragement will grow. If we focus on all that we have, our feelings of abundance and happiness will grow.\",\n                    \"EmailInstructions\": \"Welcome to Day 3 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWe know that what we focus on grows. If we focus on all that we don't have, our feelings of discontent and discouragement will grow. If we focus on all that we have, our feelings of abundance and happiness will grow.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"4\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"4\",\n                    \"MilestoneInstructions\": \"Welcome to Day 4 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nEvery time you focus on something that you don't have and you start to feel bad, interrupt that thought and think of something you do have. Choose to feel good.\",\n                    \"EmailInstructions\": \"Welcome to Day 4 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nEvery time you focus on something that you don't have and you start to feel bad, interrupt that thought and think of something you do have. Choose to feel good.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"5\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"5\",\n                    \"MilestoneInstructions\": \"Welcome to Day 5 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nNo doubt we can all find things that aren't going well in our lives, but if we focus on these things, we will get anxious, panicky, jealous of others who \\\"seem to have more,\\\" and we will feel like we are in a state of lack.  But when we focus on everything that is going well in our lives, we feel optimistic, relaxed, encouraged, full of abundance.\\n\\nIf I had to choose, I'd focus on the positive!  How about you?\",\n                    \"EmailInstructions\": \"Welcome to Day 5 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nNo doubt we can all find things that aren't going well in our lives, but if we focus on these things, we will get anxious, panicky, jealous of others who \\\"seem to have more,\\\" and we will feel like we are in a state of lack.  But when we focus on everything that is going well in our lives, we feel optimistic, relaxed, encouraged, full of abundance.\\n\\nIf I had to choose, I'd focus on the positive!  How about you?\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"6\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"6\",\n                    \"MilestoneInstructions\": \"Welcome to Day 6 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou are doing some real mental muscle building to focus on what is good in your life.  This challenge is going to help you feel more optimistic, hopeful, relaxed and happy. The more you do this, the more it will become a way of being and a way of life!  It'll get easier to do too!\",\n                    \"EmailInstructions\": \"Welcome to Day 6 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nYou are doing some real mental muscle building to focus on what is good in your life.  This challenge is going to help you feel more optimistic, hopeful, relaxed and happy. The more you do this, the more it will become a way of being and a way of life!  It'll get easier to do too!\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"7\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"7\",\n                    \"MilestoneInstructions\": \"Welcome to Day 7 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nGo ahead and focus on all the good things you have, and not just the material things.  It's so easy to forget to appreciate how far you've come and the good things you have brought into your life.  This is the time to remember!\",\n                    \"EmailInstructions\": \"Welcome to Day 7 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nGo ahead and focus on all the good things you have, and not just the material things.  It's so easy to forget to appreciate how far you've come and the good things you have brought into your life.  This is the time to remember!\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"8\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"8\",\n                    \"MilestoneInstructions\": \"Welcome to Day 8 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWhat you appreciate, appreciates!  The more you focus on the good sides of your family, your friend , your job, or your significant other, the more good will come back to you.\",\n                    \"EmailInstructions\": \"Welcome to Day 8 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal. \\n\\nWhat you appreciate, appreciates!  The more you focus on the good sides of your family, your friend , your job, or your significant other, the more good will come back to you.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"9\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"9\",\n                    \"MilestoneInstructions\": \"Welcome to Day 9 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 9 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"10\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"10\",\n                    \"MilestoneInstructions\": \"Welcome to Day 10 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 10 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"11\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"11\",\n                    \"MilestoneInstructions\": \"Welcome to Day 11 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 11 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"12\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"12\",\n                    \"MilestoneInstructions\": \"Welcome to Day 12 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 12 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"13\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"13\",\n                    \"MilestoneInstructions\": \"Welcome to Day 13 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 13 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"14\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"14\",\n                    \"MilestoneInstructions\": \"Welcome to Day 14 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 14 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"15\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"15\",\n                    \"MilestoneInstructions\": \"Welcome to Day 15 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 15 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"16\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"16\",\n                    \"MilestoneInstructions\": \"Welcome to Day 16 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 16 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"17\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"17\",\n                    \"MilestoneInstructions\": \"Welcome to Day 17 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 17 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"18\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"18\",\n                    \"MilestoneInstructions\": \"Welcome to Day 18 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 18 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"19\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"19\",\n                    \"MilestoneInstructions\": \"Welcome to Day 19 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 19 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"20\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"20\",\n                    \"MilestoneInstructions\": \"Welcome to Day 20 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 20 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                },\n                {\n                    \"ID\": \"21\",\n                    \"ChallengeID\": \"28\",\n                    \"MilestoneIndex\": \"21\",\n                    \"MilestoneInstructions\": \"Welcome to Day 21 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"EmailInstructions\": \"Welcome to Day 21 of your I Have Challenge!\\n\\nYour challenge is to focus on what \\\"I Have\\\" each day for 21 days, and write about it for at least two minutes in your online Challenge Journal.\",\n                    \"ExtraData\": \"\",\n                    \"TypeID\": \"1\"\n                }\n            ]\n        },\n        \"Milestones\": [\n            {\n                \"ID\": \"33\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-01\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"34\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-02\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"35\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-03\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"36\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-04\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"37\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-05\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"38\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-06\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"39\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-09\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"40\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-10\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"41\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-11\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"42\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-12\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"43\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-13\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"44\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-16\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"45\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-17\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"46\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-18\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"47\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-19\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"48\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-20\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"49\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-23\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"50\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-24\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"51\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-25\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"52\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-26\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"53\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-27\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-06257d06-b19d-49cd-bbe5-8ec52d430f7f",
+          "name": "/userchallenges/{id}",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User Challenge Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 2"
+                },
+                {
+                  "description": "Date Completed (Optional)",
+                  "key": "DateCompleted",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/{id}",
+            "description": "Complete a User Challenge "
+          },
+          "response": [
+            {
+              "id": "5681180-a733e7b2-2969-40f3-9993-89ab4310bc85",
+              "name": "Successful update",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "User Challenge Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 3"
+                    },
+                    {
+                      "description": "Date Completed (Optional)",
+                      "key": "DateCompleted",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/5"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:40:44 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2836"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserChallenge successfully updated\",\n    \"UserChallenge\": {\n        \"ID\": \"5\",\n        \"UserID\": \"511\",\n        \"ChallengeID\": \"28\",\n        \"JournalID\": null,\n        \"DateJoined\": \"2018-07-01 00:00:00\",\n        \"DateStarted\": \"2018-06-30 00:00:00\",\n        \"DateCompleted\": \"2018-07-01 00:00:00\",\n        \"Status\": \"3\",\n        \"Type\": null,\n        \"Milestones\": [\n            {\n                \"ID\": \"33\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-01\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"34\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-02\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"35\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-03\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"36\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-04\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"37\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-05\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"38\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-06\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"39\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-09\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"40\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-10\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"41\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-11\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"42\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-12\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"43\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-13\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"44\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-16\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"45\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-17\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"46\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-18\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"47\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-19\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"48\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-20\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"49\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-23\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"50\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-24\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"51\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-25\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"52\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-26\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"53\",\n                \"UserChallengeID\": \"5\",\n                \"DateDue\": \"2018-07-27\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-21d7da1b-3892-4f4b-a7bb-18dc716ce60c",
+          "name": "/userchallenges/{id}/quit",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User Challenge Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 2"
+                },
+                {
+                  "description": "Date Completed (Optional)",
+                  "key": "DateCompleted",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/{id}/quit",
+            "description": "Quit from a User Challenge "
+          },
+          "response": [
+            {
+              "id": "5681180-84b23e16-b294-47ee-bd2e-28885fbf85a1",
+              "name": "Quit successful",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "User Challenge Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 2"
+                    },
+                    {
+                      "description": "Date Completed (Optional)",
+                      "key": "DateCompleted",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/5/quit"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:47:58 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "72"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"UserChallenge successfully quit\",\n    \"ID\": 5\n}"
+            },
+            {
+              "id": "5681180-7c74d8bd-2154-41df-abbe-f4180239ff2b",
+              "name": "UserChallenge does not exist",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "User Challenge Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 2"
+                    },
+                    {
+                      "description": "Date Completed (Optional)",
+                      "key": "DateCompleted",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/5/quit"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Oct 2018 14:48:36 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "58"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"UserChallenge not found\"\n}"
             }
           ]
         }
