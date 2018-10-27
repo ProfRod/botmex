@@ -4919,6 +4919,680 @@
               "body": "{\n    \"Status\": false,\n    \"StatusMessage\": \"UserChallenge not found\"\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "5681180-f44d0283-016f-4ff4-9b2a-7f23304d0ab2",
+          "name": "/userjournalgroups",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User ID",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511"
+                },
+                {
+                  "description": "Journal Group Name (Optional)",
+                  "key": "Name",
+                  "type": "text",
+                  "value": "Journal group 1"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups",
+            "description": "Create a journal group"
+          },
+          "response": [
+            {
+              "id": "5681180-d2491fbc-d30a-446c-a20a-5076273a5117",
+              "name": "Journal group created",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "User ID",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": "511"
+                    },
+                    {
+                      "description": "Journal Group Name (Optional)",
+                      "key": "Name",
+                      "type": "text",
+                      "value": "Journal group 1"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 26 Oct 2018 15:21:42 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "166"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"JournalGroup successfully added\",\n    \"JournalGroup\": {\n        \"ID\": \"2\",\n        \"UserID\": \"511\",\n        \"Name\": \"Journal group 1\",\n        \"DateCreate\": \"2018-10-26 15:21:43\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-48feaac7-b3f5-47c0-825d-5461b0a896f9",
+          "name": "/userjournalgroups/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups/2?IncludeJournalEntries=1",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "userjournalgroups",
+                "2"
+              ],
+              "query": [
+                {
+                  "key": "IncludeJournalEntries",
+                  "value": "1",
+                  "equals": true,
+                  "description": "Include journals flag (Optional) "
+                }
+              ]
+            },
+            "description": "get journal group"
+          },
+          "response": [
+            {
+              "id": "5681180-9c268f72-d815-40c1-9788-04900389cd50",
+              "name": "Journal group only",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {},
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups/2"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 26 Oct 2018 15:23:28 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "153"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"JournalGroup found\",\n    \"JournalGroup\": {\n        \"ID\": \"2\",\n        \"UserID\": \"511\",\n        \"Name\": \"Journal group 1\",\n        \"DateCreate\": \"2018-10-26 15:21:43\"\n    }\n}"
+            },
+            {
+              "id": "5681180-f9b995a5-7c2f-4996-9425-c514bb50f4b4",
+              "name": "Journal group with entries",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups/2?IncludeJournalEntries=1",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "userjournalgroups",
+                    "2"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeJournalEntries",
+                      "value": "1",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 26 Oct 2018 15:24:44 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "374"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=99"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"JournalGroup found\",\n    \"JournalGroup\": {\n        \"ID\": \"2\",\n        \"UserID\": \"511\",\n        \"Name\": \"Journal group 1\",\n        \"DateCreate\": \"2018-10-26 15:21:43\"\n    },\n    \"Total\": 1,\n    \"JournalEntries\": [\n        {\n            \"ID\": \"9\",\n            \"UserID\": \"511\",\n            \"JournalGroupID\": \"2\",\n            \"Title\": \"Journal Title\",\n            \"Content\": \"Some journal content\",\n            \"DateAdded\": \"2018-10-26 15:24:40\",\n            \"DateUpdated\": \"2018-10-26 15:24:40\",\n            \"TimeElapsed\": \"0\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-a52536d9-68ac-46fe-b5ae-026243b14687",
+          "name": "/userjournals",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User ID",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511"
+                },
+                {
+                  "key": "Content",
+                  "value": "Some journal content",
+                  "description": "Journal Entry",
+                  "type": "text"
+                },
+                {
+                  "key": "Title",
+                  "value": "Journal Title",
+                  "description": "Journal TItle",
+                  "type": "text"
+                },
+                {
+                  "key": "DateAdded",
+                  "value": "2018-07-01 00:00:00",
+                  "description": "Date Added (Optional)",
+                  "type": "text"
+                },
+                {
+                  "key": "UserJournalGroupID",
+                  "value": "1",
+                  "description": "Journal Group ID (Optional)",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournals",
+            "description": "Submit a journal entry"
+          },
+          "response": [
+            {
+              "id": "5681180-2bea55eb-7130-4f6e-88e3-5e6492352d16",
+              "name": "Journal entry added",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "User ID",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": "511"
+                    },
+                    {
+                      "key": "Content",
+                      "value": "Some journal content",
+                      "description": "Journal Entry",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Title",
+                      "value": "Journal Title",
+                      "description": "Journal TItle",
+                      "type": "text"
+                    },
+                    {
+                      "key": "DateAdded",
+                      "value": "2018-07-01 00:00:00",
+                      "description": "Date Added (Optional)",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "UserJournalGroupID",
+                      "value": "1",
+                      "description": "Journal Group ID (Optional)",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournals"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 26 Oct 2018 15:04:20 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "263"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Journal successfully added\",\n    \"Journal\": {\n        \"ID\": \"8\",\n        \"UserID\": \"511\",\n        \"JournalGroupID\": null,\n        \"Title\": \"Journal Title\",\n        \"Content\": \"Some journal content\",\n        \"DateAdded\": \"2018-10-26 15:04:20\",\n        \"DateUpdated\": \"2018-10-26 15:04:20\",\n        \"TimeElapsed\": \"0\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-94c9b915-7c0e-42af-a2b4-def73753d75f",
+          "name": "/userjournals/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {},
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournals/8",
+            "description": "get journal entry"
+          },
+          "response": [
+            {
+              "id": "5681180-76ef8156-20c6-4869-ac9b-2d15617c944f",
+              "name": "Journal fetched",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {},
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournals/8"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 26 Oct 2018 15:06:24 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "250"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Journal found\",\n    \"Journal\": {\n        \"ID\": \"8\",\n        \"UserID\": \"511\",\n        \"JournalGroupID\": null,\n        \"Title\": \"Journal Title\",\n        \"Content\": \"Some journal content\",\n        \"DateAdded\": \"2018-10-26 15:04:20\",\n        \"DateUpdated\": \"2018-10-26 15:04:20\",\n        \"TimeElapsed\": \"0\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-f180a218-426e-494b-83fc-b28db7818523",
+          "name": "/userchallengemilestones",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User Challenge ID",
+                  "key": "UserChallengeID",
+                  "type": "text",
+                  "value": "2"
+                },
+                {
+                  "description": "Milestone Date",
+                  "key": "DateDue",
+                  "type": "text",
+                  "value": "2018-10-27"
+                },
+                {
+                  "description": "Milestone Data (Optional)",
+                  "key": "Data",
+                  "type": "text",
+                  "value": "{\"JournalID\":\"9\"}"
+                },
+                {
+                  "description": "Status (Optional)",
+                  "key": "Status",
+                  "type": "text",
+                  "value": "1"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallengemilestones",
+            "description": "Update a user challenge milestone based on user challenge id and date due"
+          },
+          "response": [
+            {
+              "id": "5681180-9d78c59a-79e4-4947-acc9-9aea6fd6e345",
+              "name": "Milestone updated",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "description": "User Challenge ID",
+                      "key": "UserChallengeID",
+                      "type": "text",
+                      "value": "2"
+                    },
+                    {
+                      "description": "Milestone Date",
+                      "key": "DateDue",
+                      "type": "text",
+                      "value": "2018-10-27"
+                    },
+                    {
+                      "description": "Milestone Data (Optional)",
+                      "key": "Data",
+                      "type": "text",
+                      "value": "{\"JournalID\":\"9\"}"
+                    },
+                    {
+                      "description": "Status (Optional)",
+                      "key": "Status",
+                      "type": "text",
+                      "value": "1"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallengemilestones"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 26 Oct 2018 16:53:29 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "224"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Usermilestone successfully updated\",\n    \"Usermilestone\": {\n        \"ID\": \"20\",\n        \"UserChallengeID\": \"2\",\n        \"DateDue\": \"2018-10-27\",\n        \"DateStatus\": null,\n        \"Status\": \"1\",\n        \"ActivityTypeID\": \"1\",\n        \"Data\": \"{\\\"JournalID\\\":\\\"9\\\"}\"\n    }\n}"
+            }
+          ]
         }
       ]
     }
