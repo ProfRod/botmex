@@ -4921,6 +4921,77 @@
           ]
         },
         {
+          "_postman_id": "5681180-3e0ec90b-67e2-46e6-bf51-62eabe4dd23f",
+          "name": "/userchallenges/{id}/expire",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              }
+            ],
+            "body": {},
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/{id}/expire",
+            "description": "Mark an expired user challenge as complete"
+          },
+          "response": [
+            {
+              "id": "5681180-b970af04-3c90-4827-82cb-a946e7919d49",
+              "name": "successful user challenge expiration",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  }
+                ],
+                "body": {},
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/2/expire"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 05:13:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2894"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Expired UserChallenge successfully completed\",\n    \"UserChallenge\": {\n        \"ID\": \"2\",\n        \"UserID\": \"111\",\n        \"ChallengeID\": \"28\",\n        \"JournalID\": null,\n        \"DateJoined\": \"2018-10-08 00:00:00\",\n        \"DateStarted\": \"2018-10-07 00:00:00\",\n        \"DateCompleted\": \"2018-10-29 05:13:33\",\n        \"Status\": \"3\",\n        \"Type\": null,\n        \"Milestones\": [\n            {\n                \"ID\": \"1\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-08\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"2\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-09\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"3\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-10\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"4\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-11\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"5\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-12\",\n                \"DateStatus\": null,\n                \"Status\": \"1\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": \"{\\\"JournalID\\\":\\\"1\\\"}\"\n            },\n            {\n                \"ID\": \"6\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-13\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"7\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-14\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"8\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-15\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"9\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-16\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"10\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-17\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"11\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-18\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"12\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-19\",\n                \"DateStatus\": null,\n                \"Status\": \"1\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": \"{\\\"JournalID\\\":\\\"7\\\"}\"\n            },\n            {\n                \"ID\": \"13\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-20\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"14\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-21\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"15\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-22\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"16\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-23\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"17\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-24\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"18\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-25\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"19\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-26\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            },\n            {\n                \"ID\": \"20\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-27\",\n                \"DateStatus\": null,\n                \"Status\": \"1\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": \"{\\\"JournalID\\\":\\\"9\\\"}\"\n            },\n            {\n                \"ID\": \"21\",\n                \"UserChallengeID\": \"2\",\n                \"DateDue\": \"2018-10-28\",\n                \"DateStatus\": null,\n                \"Status\": \"0\",\n                \"ActivityTypeID\": \"1\",\n                \"Data\": null\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
           "_postman_id": "5681180-f44d0283-016f-4ff4-9b2a-7f23304d0ab2",
           "name": "/userjournalgroups",
           "request": {
@@ -5591,6 +5662,2263 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Usermilestone successfully updated\",\n    \"Usermilestone\": {\n        \"ID\": \"20\",\n        \"UserChallengeID\": \"2\",\n        \"DateDue\": \"2018-10-27\",\n        \"DateStatus\": null,\n        \"Status\": \"1\",\n        \"ActivityTypeID\": \"1\",\n        \"Data\": \"{\\\"JournalID\\\":\\\"9\\\"}\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_postman_id": "5681180-5686f45f-b37b-46b4-8adb-c5f514d015eb",
+      "name": "Contents",
+      "description": "API Calls related to Mood Flippers and Stories that Heal",
+      "item": [
+        {
+          "_postman_id": "5681180-e2d23761-5771-4f83-9618-8ec547ca6f89",
+          "name": "/contents",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "TypeID",
+                  "value": " 3",
+                  "type": "text",
+                  "description": "Content Type ID"
+                },
+                {
+                  "key": "CategoryID",
+                  "value": " 387",
+                  "type": "text",
+                  "description": "Category ID"
+                },
+                {
+                  "key": "Name",
+                  "value": " My Quick Flip",
+                  "type": "text",
+                  "description": "Content Name"
+                },
+                {
+                  "key": "Description",
+                  "value": " My First Quick Flip",
+                  "type": "text",
+                  "description": "Content Description"
+                },
+                {
+                  "key": "URL",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png",
+                  "type": "text",
+                  "description": "Content URL"
+                },
+                {
+                  "key": "ThumbnailURL",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png",
+                  "type": "text",
+                  "description": "Thumbnail URL"
+                },
+                {
+                  "key": "UserGenFlag",
+                  "value": " 0",
+                  "type": "text",
+                  "description": "User Generated Flag"
+                },
+                {
+                  "key": "PublishedFlag",
+                  "value": " 1",
+                  "type": "text",
+                  "description": "Published Flag"
+                },
+                {
+                  "key": "ShareOptionID",
+                  "value": " 1",
+                  "type": "text",
+                  "description": "Share Option ID"
+                },
+                {
+                  "key": "ByLine",
+                  "value": " ",
+                  "type": "text",
+                  "description": "By Line (Optional)",
+                  "disabled": true
+                },
+                {
+                  "key": "DateCreated",
+                  "value": " 2018-07-01 00:00:00",
+                  "type": "text",
+                  "description": "Date Created (Optional)"
+                },
+                {
+                  "key": "DateUpdated",
+                  "value": " ",
+                  "type": "text",
+                  "description": "Date Updated (Optional)",
+                  "disabled": true
+                },
+                {
+                  "key": "UserID",
+                  "value": " ",
+                  "type": "text",
+                  "description": "User ID if User Generated (Optional)",
+                  "disabled": true
+                },
+                {
+                  "key": "DatePublished",
+                  "value": "",
+                  "type": "text",
+                  "description": "Date Published (Optional)",
+                  "disabled": true
+                },
+                {
+                  "key": "StartTime",
+                  "value": "",
+                  "type": "text",
+                  "description": "Start time for videos (Optional)",
+                  "disabled": true
+                },
+                {
+                  "key": "EndTime",
+                  "value": "",
+                  "type": "text",
+                  "description": "End time for videos (Optional)",
+                  "disabled": true
+                },
+                {
+                  "key": "Status",
+                  "value": " 1",
+                  "type": "text",
+                  "description": "Status"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents",
+            "description": "Create a content"
+          },
+          "response": [
+            {
+              "id": "5681180-7fc061a2-f832-45cb-8714-69b89781cd0f",
+              "name": "Content added",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "TypeID",
+                      "value": " 3",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "CategoryID",
+                      "value": " 387",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "Name",
+                      "value": " My Quick Flip",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "Description",
+                      "value": " My First Quick Flip",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "URL",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "ThumbnailURL",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "UserGenFlag",
+                      "value": " 0",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "PublishedFlag",
+                      "value": " 1",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "ShareOptionID",
+                      "value": " 1",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "ByLine",
+                      "value": " ",
+                      "type": "text",
+                      "description": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "DateCreated",
+                      "value": " 2018-07-01 00:00:00",
+                      "type": "text",
+                      "description": ""
+                    },
+                    {
+                      "key": "DateUpdated",
+                      "value": " ",
+                      "type": "text",
+                      "description": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "UserID",
+                      "value": " ",
+                      "type": "text",
+                      "description": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "DatePublished",
+                      "value": "",
+                      "type": "text",
+                      "description": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "",
+                      "type": "text",
+                      "description": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "",
+                      "type": "text",
+                      "description": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "Status",
+                      "value": " 1",
+                      "type": "text",
+                      "description": ""
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 08:05:58 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "768"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Content successfully added\",\n    \"Content\": {\n        \"ID\": \"285\",\n        \"TypeID\": \"3\",\n        \"CategoryID\": \"387\",\n        \"WorkspaceID\": \"1\",\n        \"Name\": \"My Quick Flip\",\n        \"Description\": \"My First Quick Flip\",\n        \"ByLine\": null,\n        \"URL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png\",\n        \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png\",\n        \"VideoURL\": null,\n        \"Options\": null,\n        \"AverageRating\": \"0.00\",\n        \"RatingCount\": \"0\",\n        \"DateCreated\": \"2018-07-01 00:00:00\",\n        \"DateUpdated\": \"2018-10-29 08:05:58\",\n        \"UserID\": null,\n        \"UserGenFlag\": \"0\",\n        \"PublishedFlag\": \"1\",\n        \"PublishDate\": null,\n        \"ShareOptionID\": \"1\",\n        \"StartTime\": \"0\",\n        \"EndTime\": \"0\",\n        \"Status\": \"1\",\n        \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-f6f9fd02-3549-4a32-8c98-e11aa219eb5e",
+          "name": "/contents/{id}/rate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "description": "User ID",
+                  "type": "text"
+                },
+                {
+                  "key": "Rating",
+                  "value": "1",
+                  "description": "Content Rating",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/{id}/rate",
+            "description": "Rate a content"
+          },
+          "response": [
+            {
+              "id": "5681180-c8b07067-c7a0-4075-9017-711cc3c15fee",
+              "name": "Content rated",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "UserID",
+                      "value": "511",
+                      "description": "User ID",
+                      "type": "text"
+                    },
+                    {
+                      "key": "Rating",
+                      "value": "1",
+                      "description": "Content Rating",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/140/rate"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 09:29:07 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "58"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Content Rating submitted\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-b6952551-44b0-43fa-a23b-1b70f8a48f10",
+          "name": "/contents",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "description": "Content Type ID",
+                  "key": "TypeID",
+                  "type": "text",
+                  "value": " 3"
+                },
+                {
+                  "description": "Category ID",
+                  "key": "CategoryID",
+                  "type": "text",
+                  "value": " 387"
+                },
+                {
+                  "description": "Content Name",
+                  "key": "Name",
+                  "type": "text",
+                  "value": " My Quick Flip"
+                },
+                {
+                  "description": "Content Description",
+                  "key": "Description",
+                  "type": "text",
+                  "value": " My First Quick Flip"
+                },
+                {
+                  "description": "Content URL",
+                  "key": "URL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "Thumbnail URL",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "User Generated Flag",
+                  "key": "UserGenFlag",
+                  "type": "text",
+                  "value": " 0"
+                },
+                {
+                  "description": "Published Flag",
+                  "key": "PublishedFlag",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "Share Option ID",
+                  "key": "ShareOptionID",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "By Line (Optional)",
+                  "key": "ByLine",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                },
+                {
+                  "description": "Date Updated (Optional)",
+                  "key": "DateUpdated",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "User ID if User Generated (Optional)",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Published (Optional)",
+                  "key": "DatePublished",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Start time for videos (Optional)",
+                  "key": "StartTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "End time for videos (Optional)",
+                  "key": "EndTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 1"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "contents"
+              ],
+              "query": [
+                {
+                  "key": "TypeID",
+                  "value": "3",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "CategoryID",
+                  "value": "387",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "UserGenFlag",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "PublishedFlag",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "ShareOptionID",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "UserID",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "Status",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "Sort",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "Search",
+                  "value": "Purple",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get all contents<br />\n\nThe following filters can be used:<br />\n\nTypeID<br />\nCategoryID<br />\nUserGenFlag<br />\nPublishedFlag<br />\nShareOptionID<br />\nUserID<br />\nStatus<br />\nSort<br />\nSearch<br />"
+          },
+          "response": [
+            {
+              "id": "5681180-7e017dd2-c246-431e-bbc3-16ed439bb7ea",
+              "name": "Content search",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": "Content Type ID",
+                      "key": "TypeID",
+                      "type": "text",
+                      "value": " 3"
+                    },
+                    {
+                      "description": "Category ID",
+                      "key": "CategoryID",
+                      "type": "text",
+                      "value": " 387"
+                    },
+                    {
+                      "description": "Content Name",
+                      "key": "Name",
+                      "type": "text",
+                      "value": " My Quick Flip"
+                    },
+                    {
+                      "description": "Content Description",
+                      "key": "Description",
+                      "type": "text",
+                      "value": " My First Quick Flip"
+                    },
+                    {
+                      "description": "Content URL",
+                      "key": "URL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "Thumbnail URL",
+                      "key": "ThumbnailURL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "User Generated Flag",
+                      "key": "UserGenFlag",
+                      "type": "text",
+                      "value": " 0"
+                    },
+                    {
+                      "description": "Published Flag",
+                      "key": "PublishedFlag",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "Share Option ID",
+                      "key": "ShareOptionID",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "By Line (Optional)",
+                      "key": "ByLine",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Created (Optional)",
+                      "key": "DateCreated",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    },
+                    {
+                      "description": "Date Updated (Optional)",
+                      "key": "DateUpdated",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "User ID if User Generated (Optional)",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Published (Optional)",
+                      "key": "DatePublished",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Start time for videos (Optional)",
+                      "key": "StartTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "End time for videos (Optional)",
+                      "key": "EndTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 1"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents?TypeID=3&Search=Purple",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "contents"
+                  ],
+                  "query": [
+                    {
+                      "key": "TypeID",
+                      "value": "3",
+                      "equals": true
+                    },
+                    {
+                      "key": "CategoryID",
+                      "value": "387",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "UserGenFlag",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "PublishedFlag",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ShareOptionID",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "UserID",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "Status",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "Sort",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "Search",
+                      "value": "Purple",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 09:27:05 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "838"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Contents found\",\n    \"Total\": 1,\n    \"Contents\": [\n        {\n            \"ID\": \"140\",\n            \"TypeID\": \"3\",\n            \"CategoryID\": \"387\",\n            \"WorkspaceID\": \"1\",\n            \"Name\": \"Purple flower paradise\",\n            \"Description\": \"Look at an amazing array of purple flowers to incredibly soothing music from YellowBrickCinema.\",\n            \"ByLine\": null,\n            \"URL\": \"https://www.youtube.com/embed/QU_9OReQ6l4\",\n            \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerparadise.png\",\n            \"VideoURL\": null,\n            \"Options\": null,\n            \"AverageRating\": \"0.00\",\n            \"RatingCount\": \"0\",\n            \"DateCreated\": \"2015-03-02 23:42:39\",\n            \"DateUpdated\": \"2015-03-02 23:42:39\",\n            \"UserID\": null,\n            \"UserGenFlag\": \"0\",\n            \"PublishedFlag\": \"1\",\n            \"PublishDate\": \"2015-03-02 23:42:39\",\n            \"ShareOptionID\": \"1\",\n            \"StartTime\": \"0\",\n            \"EndTime\": \"536\",\n            \"Status\": \"1\",\n            \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerparadise.png\",\n            \"VideoSource\": 1,\n            \"Favorite\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-078b45af-6093-444b-a2a1-bee45c3b1721",
+          "name": "/contents/paginated",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "description": "Content Type ID",
+                  "key": "TypeID",
+                  "type": "text",
+                  "value": " 3"
+                },
+                {
+                  "description": "Category ID",
+                  "key": "CategoryID",
+                  "type": "text",
+                  "value": " 387"
+                },
+                {
+                  "description": "Content Name",
+                  "key": "Name",
+                  "type": "text",
+                  "value": " My Quick Flip"
+                },
+                {
+                  "description": "Content Description",
+                  "key": "Description",
+                  "type": "text",
+                  "value": " My First Quick Flip"
+                },
+                {
+                  "description": "Content URL",
+                  "key": "URL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "Thumbnail URL",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "User Generated Flag",
+                  "key": "UserGenFlag",
+                  "type": "text",
+                  "value": " 0"
+                },
+                {
+                  "description": "Published Flag",
+                  "key": "PublishedFlag",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "Share Option ID",
+                  "key": "ShareOptionID",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "By Line (Optional)",
+                  "key": "ByLine",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                },
+                {
+                  "description": "Date Updated (Optional)",
+                  "key": "DateUpdated",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "User ID if User Generated (Optional)",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Published (Optional)",
+                  "key": "DatePublished",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Start time for videos (Optional)",
+                  "key": "StartTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "End time for videos (Optional)",
+                  "key": "EndTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 1"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/paginated",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "contents",
+                "paginated"
+              ],
+              "query": [
+                {
+                  "key": "TypeID",
+                  "type": "text",
+                  "value": "3",
+                  "disabled": true
+                },
+                {
+                  "key": "CategoryID",
+                  "type": "text",
+                  "value": "387",
+                  "disabled": true
+                },
+                {
+                  "key": "UserGenFlag",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "PublishedFlag",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "ShareOptionID",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "Status",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "Sort",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "Search",
+                  "type": "text",
+                  "value": "Purple",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get all contents<br />\n\nThe following filters can be used:<br />\n\nTypeID<br />\nCategoryID<br />\nUserID<br />\nStatus<br />\nSortOrder<br />\nSortField<br />\nSearch<br />\nIncludeUGC<br />\nPage<br />\nRows<br />\nPrivate<br />\nShareOptionID<br />"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-6394148b-dd06-476e-b4f4-6bab68f122fc",
+          "name": "/contents/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "description": "Content Type ID",
+                  "key": "TypeID",
+                  "type": "text",
+                  "value": " 3"
+                },
+                {
+                  "description": "Category ID",
+                  "key": "CategoryID",
+                  "type": "text",
+                  "value": " 387"
+                },
+                {
+                  "description": "Content Name",
+                  "key": "Name",
+                  "type": "text",
+                  "value": " My Quick Flip"
+                },
+                {
+                  "description": "Content Description",
+                  "key": "Description",
+                  "type": "text",
+                  "value": " My First Quick Flip"
+                },
+                {
+                  "description": "Content URL",
+                  "key": "URL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "Thumbnail URL",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "User Generated Flag",
+                  "key": "UserGenFlag",
+                  "type": "text",
+                  "value": " 0"
+                },
+                {
+                  "description": "Published Flag",
+                  "key": "PublishedFlag",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "Share Option ID",
+                  "key": "ShareOptionID",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "By Line (Optional)",
+                  "key": "ByLine",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                },
+                {
+                  "description": "Date Updated (Optional)",
+                  "key": "DateUpdated",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "User ID if User Generated (Optional)",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Published (Optional)",
+                  "key": "DatePublished",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Start time for videos (Optional)",
+                  "key": "StartTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "End time for videos (Optional)",
+                  "key": "EndTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 1"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/{id}",
+            "description": "Get content(s)<br />\n\nTo fetch multiple contents, pass comma-separated ids instead"
+          },
+          "response": [
+            {
+              "id": "5681180-bdb79454-7504-473e-9379-2f61ab8060dc",
+              "name": "Content found (single)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": "Content Type ID",
+                      "key": "TypeID",
+                      "type": "text",
+                      "value": " 3"
+                    },
+                    {
+                      "description": "Category ID",
+                      "key": "CategoryID",
+                      "type": "text",
+                      "value": " 387"
+                    },
+                    {
+                      "description": "Content Name",
+                      "key": "Name",
+                      "type": "text",
+                      "value": " My Quick Flip"
+                    },
+                    {
+                      "description": "Content Description",
+                      "key": "Description",
+                      "type": "text",
+                      "value": " My First Quick Flip"
+                    },
+                    {
+                      "description": "Content URL",
+                      "key": "URL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "Thumbnail URL",
+                      "key": "ThumbnailURL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "User Generated Flag",
+                      "key": "UserGenFlag",
+                      "type": "text",
+                      "value": " 0"
+                    },
+                    {
+                      "description": "Published Flag",
+                      "key": "PublishedFlag",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "Share Option ID",
+                      "key": "ShareOptionID",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "By Line (Optional)",
+                      "key": "ByLine",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Created (Optional)",
+                      "key": "DateCreated",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    },
+                    {
+                      "description": "Date Updated (Optional)",
+                      "key": "DateUpdated",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "User ID if User Generated (Optional)",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Published (Optional)",
+                      "key": "DatePublished",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Start time for videos (Optional)",
+                      "key": "StartTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "End time for videos (Optional)",
+                      "key": "EndTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 1"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/140"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 09:30:43 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "807"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Content found\",\n    \"Content\": {\n        \"ID\": \"140\",\n        \"TypeID\": \"3\",\n        \"CategoryID\": \"387\",\n        \"WorkspaceID\": \"1\",\n        \"Name\": \"Purple flower paradise\",\n        \"Description\": \"Look at an amazing array of purple flowers to incredibly soothing music from YellowBrickCinema.\",\n        \"ByLine\": null,\n        \"URL\": \"https://www.youtube.com/embed/QU_9OReQ6l4\",\n        \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerparadise.png\",\n        \"VideoURL\": null,\n        \"Options\": null,\n        \"AverageRating\": \"0.00\",\n        \"RatingCount\": \"0\",\n        \"DateCreated\": \"2015-03-02 23:42:39\",\n        \"DateUpdated\": \"2015-03-02 23:42:39\",\n        \"UserID\": null,\n        \"UserGenFlag\": \"0\",\n        \"PublishedFlag\": \"1\",\n        \"PublishDate\": \"2015-03-02 23:42:39\",\n        \"ShareOptionID\": \"1\",\n        \"StartTime\": \"0\",\n        \"EndTime\": \"536\",\n        \"Status\": \"1\",\n        \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerparadise.png\",\n        \"VideoSource\": 1\n    }\n}"
+            },
+            {
+              "id": "5681180-4f43364d-aaad-40de-b56b-02fdf9b5e53b",
+              "name": "Content found (multiple ids)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": "Content Type ID",
+                      "key": "TypeID",
+                      "type": "text",
+                      "value": " 3"
+                    },
+                    {
+                      "description": "Category ID",
+                      "key": "CategoryID",
+                      "type": "text",
+                      "value": " 387"
+                    },
+                    {
+                      "description": "Content Name",
+                      "key": "Name",
+                      "type": "text",
+                      "value": " My Quick Flip"
+                    },
+                    {
+                      "description": "Content Description",
+                      "key": "Description",
+                      "type": "text",
+                      "value": " My First Quick Flip"
+                    },
+                    {
+                      "description": "Content URL",
+                      "key": "URL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "Thumbnail URL",
+                      "key": "ThumbnailURL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "User Generated Flag",
+                      "key": "UserGenFlag",
+                      "type": "text",
+                      "value": " 0"
+                    },
+                    {
+                      "description": "Published Flag",
+                      "key": "PublishedFlag",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "Share Option ID",
+                      "key": "ShareOptionID",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "By Line (Optional)",
+                      "key": "ByLine",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Created (Optional)",
+                      "key": "DateCreated",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    },
+                    {
+                      "description": "Date Updated (Optional)",
+                      "key": "DateUpdated",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "User ID if User Generated (Optional)",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Published (Optional)",
+                      "key": "DatePublished",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Start time for videos (Optional)",
+                      "key": "StartTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "End time for videos (Optional)",
+                      "key": "EndTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 1"
+                    }
+                  ]
+                },
+                "url": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/140%2C71"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 09:31:48 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2032"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Contents found\",\n    \"Total\": 2,\n    \"Contents\": [\n        {\n            \"ID\": \"71\",\n            \"TypeID\": \"3\",\n            \"CategoryID\": \"387\",\n            \"WorkspaceID\": \"1\",\n            \"Name\": \"Soothing Sites and Sounds of today!\",\n            \"Description\": \"Let yourself get lost in the soothing ocean view as the sun rises and sets on a beautiful day.  Along the way, try to take some deep relaxaing breaths, relax your muscles and, focus on the feelings of peace inside you as you watch the beauty of nature unfold Published on Youtube Mar 8, 2013 by Leonidas Tritsiniotis Music- \\\"Melodia Para Kiara\\\" from Relaxing Melodies of Nature© by Kenio Fuke - Real Music® - https://www.realmusic.com                                                              \",\n            \"ByLine\": null,\n            \"URL\": \"https://www.youtube.com/embed/l0VIel6VRqo\",\n            \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/oceanFlip.png\",\n            \"VideoURL\": null,\n            \"Options\": null,\n            \"AverageRating\": \"1.00\",\n            \"RatingCount\": \"4\",\n            \"DateCreated\": \"2014-12-30 18:24:50\",\n            \"DateUpdated\": \"2015-06-29 21:40:44\",\n            \"UserID\": null,\n            \"UserGenFlag\": \"0\",\n            \"PublishedFlag\": \"1\",\n            \"PublishDate\": \"2014-12-30 20:35:03\",\n            \"ShareOptionID\": \"1\",\n            \"StartTime\": \"30\",\n            \"EndTime\": \"0\",\n            \"Status\": \"1\",\n            \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/oceanFlip.png\",\n            \"VideoSource\": 1,\n            \"Favorite\": true\n        },\n        {\n            \"ID\": \"140\",\n            \"TypeID\": \"3\",\n            \"CategoryID\": \"387\",\n            \"WorkspaceID\": \"1\",\n            \"Name\": \"Purple flower paradise\",\n            \"Description\": \"Look at an amazing array of purple flowers to incredibly soothing music from YellowBrickCinema.\",\n            \"ByLine\": null,\n            \"URL\": \"https://www.youtube.com/embed/QU_9OReQ6l4\",\n            \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerparadise.png\",\n            \"VideoURL\": null,\n            \"Options\": null,\n            \"AverageRating\": \"0.00\",\n            \"RatingCount\": \"0\",\n            \"DateCreated\": \"2015-03-02 23:42:39\",\n            \"DateUpdated\": \"2015-03-02 23:42:39\",\n            \"UserID\": null,\n            \"UserGenFlag\": \"0\",\n            \"PublishedFlag\": \"1\",\n            \"PublishDate\": \"2015-03-02 23:42:39\",\n            \"ShareOptionID\": \"1\",\n            \"StartTime\": \"0\",\n            \"EndTime\": \"536\",\n            \"Status\": \"1\",\n            \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerparadise.png\",\n            \"VideoSource\": 1,\n            \"Favorite\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-8d59ff82-3b6d-4650-845d-32d02413f397",
+          "name": "/contents/{id}/next",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "description": "Content Type ID",
+                  "key": "TypeID",
+                  "type": "text",
+                  "value": " 3"
+                },
+                {
+                  "description": "Category ID",
+                  "key": "CategoryID",
+                  "type": "text",
+                  "value": " 387"
+                },
+                {
+                  "description": "Content Name",
+                  "key": "Name",
+                  "type": "text",
+                  "value": " My Quick Flip"
+                },
+                {
+                  "description": "Content Description",
+                  "key": "Description",
+                  "type": "text",
+                  "value": " My First Quick Flip"
+                },
+                {
+                  "description": "Content URL",
+                  "key": "URL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "Thumbnail URL",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "User Generated Flag",
+                  "key": "UserGenFlag",
+                  "type": "text",
+                  "value": " 0"
+                },
+                {
+                  "description": "Published Flag",
+                  "key": "PublishedFlag",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "Share Option ID",
+                  "key": "ShareOptionID",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "By Line (Optional)",
+                  "key": "ByLine",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                },
+                {
+                  "description": "Date Updated (Optional)",
+                  "key": "DateUpdated",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "User ID if User Generated (Optional)",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Published (Optional)",
+                  "key": "DatePublished",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Start time for videos (Optional)",
+                  "key": "StartTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "End time for videos (Optional)",
+                  "key": "EndTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 1"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/{id}/next?CategoryID=387",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "contents",
+                "{id}",
+                "next"
+              ],
+              "query": [
+                {
+                  "key": "CategoryID",
+                  "value": "387",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "Get next sibling content"
+          },
+          "response": [
+            {
+              "id": "5681180-31877771-f77a-4ea9-822a-688be31bba71",
+              "name": "Sibling content found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": "Content Type ID",
+                      "key": "TypeID",
+                      "type": "text",
+                      "value": " 3"
+                    },
+                    {
+                      "description": "Category ID",
+                      "key": "CategoryID",
+                      "type": "text",
+                      "value": " 387"
+                    },
+                    {
+                      "description": "Content Name",
+                      "key": "Name",
+                      "type": "text",
+                      "value": " My Quick Flip"
+                    },
+                    {
+                      "description": "Content Description",
+                      "key": "Description",
+                      "type": "text",
+                      "value": " My First Quick Flip"
+                    },
+                    {
+                      "description": "Content URL",
+                      "key": "URL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "Thumbnail URL",
+                      "key": "ThumbnailURL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "User Generated Flag",
+                      "key": "UserGenFlag",
+                      "type": "text",
+                      "value": " 0"
+                    },
+                    {
+                      "description": "Published Flag",
+                      "key": "PublishedFlag",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "Share Option ID",
+                      "key": "ShareOptionID",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "By Line (Optional)",
+                      "key": "ByLine",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Created (Optional)",
+                      "key": "DateCreated",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    },
+                    {
+                      "description": "Date Updated (Optional)",
+                      "key": "DateUpdated",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "User ID if User Generated (Optional)",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Published (Optional)",
+                      "key": "DatePublished",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Start time for videos (Optional)",
+                      "key": "StartTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "End time for videos (Optional)",
+                      "key": "EndTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 1"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/71/next?CategoryID=387",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "contents",
+                    "71",
+                    "next"
+                  ],
+                  "query": [
+                    {
+                      "key": "CategoryID",
+                      "value": "387",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 09:34:31 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1351"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Content found\",\n    \"Content\": {\n        \"ID\": \"72\",\n        \"TypeID\": \"3\",\n        \"CategoryID\": \"387\",\n        \"WorkspaceID\": \"1\",\n        \"Name\": \"Flower Power\",\n        \"Description\": \"Give yourself a flower power boost.  Just wander this field of flowers for an immediate pick me up.  As you do so, try to take in the good feelings it causes and focus on those feelings to make them last inside you as long as you can. Published on Youtube Jun 5, 2013 Edited by Leonidas Tritsiniotis    Music - \\\"�xи�\\u0081�Rмо\\\" by СеѬгей ТамбаѬ�\\u0081кий  Sound Recorder management of [Merlin] Danmark MusicGroup:http://www.merlinnetwork.org/\",\n        \"ByLine\": null,\n        \"URL\": \"https://www.youtube.com/embed/6qQffra-HKw\",\n        \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerFlip.png\",\n        \"VideoURL\": null,\n        \"Options\": null,\n        \"AverageRating\": \"1.00\",\n        \"RatingCount\": \"5\",\n        \"DateCreated\": \"2014-12-30 21:23:22\",\n        \"DateUpdated\": \"2015-03-05 18:24:54\",\n        \"UserID\": null,\n        \"UserGenFlag\": \"0\",\n        \"PublishedFlag\": \"1\",\n        \"PublishDate\": \"2015-01-15 00:00:00\",\n        \"ShareOptionID\": \"1\",\n        \"StartTime\": \"20\",\n        \"EndTime\": \"0\",\n        \"Status\": \"1\",\n        \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerFlip.png\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "5681180-214fc88d-e6cd-4845-b07e-accfda1c8323",
+          "name": "/contents/{id}/previous",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "description": "Content Type ID",
+                  "key": "TypeID",
+                  "type": "text",
+                  "value": " 3"
+                },
+                {
+                  "description": "Category ID",
+                  "key": "CategoryID",
+                  "type": "text",
+                  "value": " 387"
+                },
+                {
+                  "description": "Content Name",
+                  "key": "Name",
+                  "type": "text",
+                  "value": " My Quick Flip"
+                },
+                {
+                  "description": "Content Description",
+                  "key": "Description",
+                  "type": "text",
+                  "value": " My First Quick Flip"
+                },
+                {
+                  "description": "Content URL",
+                  "key": "URL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "Thumbnail URL",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                },
+                {
+                  "description": "User Generated Flag",
+                  "key": "UserGenFlag",
+                  "type": "text",
+                  "value": " 0"
+                },
+                {
+                  "description": "Published Flag",
+                  "key": "PublishedFlag",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "Share Option ID",
+                  "key": "ShareOptionID",
+                  "type": "text",
+                  "value": " 1"
+                },
+                {
+                  "description": "By Line (Optional)",
+                  "key": "ByLine",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": " 2018-07-01 00:00:00"
+                },
+                {
+                  "description": "Date Updated (Optional)",
+                  "key": "DateUpdated",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "User ID if User Generated (Optional)",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": " ",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Published (Optional)",
+                  "key": "DatePublished",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Start time for videos (Optional)",
+                  "key": "StartTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "End time for videos (Optional)",
+                  "key": "EndTime",
+                  "type": "text",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "description": "Status",
+                  "key": "Status",
+                  "type": "text",
+                  "value": " 1"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/{id}/next?CategoryID=387",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "contents",
+                "{id}",
+                "next"
+              ],
+              "query": [
+                {
+                  "key": "CategoryID",
+                  "value": "387",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "Get previous sibling content"
+          },
+          "response": [
+            {
+              "id": "5681180-21b6287b-33b0-4170-a6ca-63f82f3e8f9d",
+              "name": "Sibling content found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "type": "text",
+                    "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": "Content Type ID",
+                      "key": "TypeID",
+                      "type": "text",
+                      "value": " 3"
+                    },
+                    {
+                      "description": "Category ID",
+                      "key": "CategoryID",
+                      "type": "text",
+                      "value": " 387"
+                    },
+                    {
+                      "description": "Content Name",
+                      "key": "Name",
+                      "type": "text",
+                      "value": " My Quick Flip"
+                    },
+                    {
+                      "description": "Content Description",
+                      "key": "Description",
+                      "type": "text",
+                      "value": " My First Quick Flip"
+                    },
+                    {
+                      "description": "Content URL",
+                      "key": "URL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "Thumbnail URL",
+                      "key": "ThumbnailURL",
+                      "type": "text",
+                      "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png"
+                    },
+                    {
+                      "description": "User Generated Flag",
+                      "key": "UserGenFlag",
+                      "type": "text",
+                      "value": " 0"
+                    },
+                    {
+                      "description": "Published Flag",
+                      "key": "PublishedFlag",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "Share Option ID",
+                      "key": "ShareOptionID",
+                      "type": "text",
+                      "value": " 1"
+                    },
+                    {
+                      "description": "By Line (Optional)",
+                      "key": "ByLine",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Created (Optional)",
+                      "key": "DateCreated",
+                      "type": "text",
+                      "value": " 2018-07-01 00:00:00"
+                    },
+                    {
+                      "description": "Date Updated (Optional)",
+                      "key": "DateUpdated",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "User ID if User Generated (Optional)",
+                      "key": "UserID",
+                      "type": "text",
+                      "value": " ",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Date Published (Optional)",
+                      "key": "DatePublished",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Start time for videos (Optional)",
+                      "key": "StartTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "End time for videos (Optional)",
+                      "key": "EndTime",
+                      "type": "text",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "description": "Status",
+                      "key": "Status",
+                      "type": "text",
+                      "value": " 1"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/contents/71/next?CategoryID=387",
+                  "protocol": "https",
+                  "host": [
+                    "allgoodapi",
+                    "itsallgoodhere",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "contents",
+                    "71",
+                    "next"
+                  ],
+                  "query": [
+                    {
+                      "key": "CategoryID",
+                      "value": "387",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 29 Oct 2018 09:34:31 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/5.5.38"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/5.5.38"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1351"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Content found\",\n    \"Content\": {\n        \"ID\": \"72\",\n        \"TypeID\": \"3\",\n        \"CategoryID\": \"387\",\n        \"WorkspaceID\": \"1\",\n        \"Name\": \"Flower Power\",\n        \"Description\": \"Give yourself a flower power boost.  Just wander this field of flowers for an immediate pick me up.  As you do so, try to take in the good feelings it causes and focus on those feelings to make them last inside you as long as you can. Published on Youtube Jun 5, 2013 Edited by Leonidas Tritsiniotis    Music - \\\"�xи�\\u0081�Rмо\\\" by СеѬгей ТамбаѬ�\\u0081кий  Sound Recorder management of [Merlin] Danmark MusicGroup:http://www.merlinnetwork.org/\",\n        \"ByLine\": null,\n        \"URL\": \"https://www.youtube.com/embed/6qQffra-HKw\",\n        \"ThumbnailURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerFlip.png\",\n        \"VideoURL\": null,\n        \"Options\": null,\n        \"AverageRating\": \"1.00\",\n        \"RatingCount\": \"5\",\n        \"DateCreated\": \"2014-12-30 21:23:22\",\n        \"DateUpdated\": \"2015-03-05 18:24:54\",\n        \"UserID\": null,\n        \"UserGenFlag\": \"0\",\n        \"PublishedFlag\": \"1\",\n        \"PublishDate\": \"2015-01-15 00:00:00\",\n        \"ShareOptionID\": \"1\",\n        \"StartTime\": \"20\",\n        \"EndTime\": \"0\",\n        \"Status\": \"1\",\n        \"ImageURL\": \"//d2pil9hl7m4qq3.cloudfront.net/quickFlips/flowerFlip.png\"\n    }\n}"
             }
           ]
         }
