@@ -3513,6 +3513,446 @@
               "body": "{\n    \"Status\": true,\n    \"StatusMessage\": \"Users found\",\n    \"Users\": [\n        {\n            \"ID\": \"511\",\n            \"FirstName\": \"john\",\n            \"LastName\": \"doe\",\n            \"JoinDate\": \"2000-01-01 15:00:00\",\n            \"ImageURL\": \"https://domain.com/image.jpg\"\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "5681180-f50cfd59-7d28-4eb0-a922-e08b326db2cc",
+          "name": "/userdiscussions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User ID",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511"
+                },
+                {
+                  "description": "Title",
+                  "key": "Title",
+                  "type": "text",
+                  "value": "My Title"
+                },
+                {
+                  "key": "Content",
+                  "value": "Discussion content",
+                  "description": "Content",
+                  "type": "text"
+                },
+                {
+                  "key": "Scope",
+                  "value": "public",
+                  "description": "Scope",
+                  "type": "text"
+                },
+                {
+                  "key": "ImageURL",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg",
+                  "description": "Image URL",
+                  "type": "text"
+                },
+                {
+                  "key": "ThumbnailURL",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg",
+                  "description": "Thumbnail URL (Optional)",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "DateCreated",
+                  "value": "2018-07-01 00:00:00",
+                  "description": "Date Created (Optional)",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions",
+            "description": "Create a discussion"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-346731e1-32dd-45db-86c1-f1ea33ae6f8c",
+          "name": "/userdiscussions/{id}",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "Title (Optional)",
+                  "key": "Title",
+                  "type": "text",
+                  "value": "2"
+                },
+                {
+                  "description": "Content (Optional)",
+                  "key": "Content",
+                  "type": "text",
+                  "value": "Discussion content"
+                },
+                {
+                  "description": "Scope (Optional)",
+                  "key": "Scope",
+                  "type": "text",
+                  "value": "public"
+                },
+                {
+                  "description": "Image URL (Optional)",
+                  "key": "ImageURL",
+                  "type": "text",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg"
+                },
+                {
+                  "description": "Thumbnail URL (Optional)",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg"
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": "2018-07-01 00:00:00"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions/{id}",
+            "description": "Update a discussion"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-a605cbb4-1eaa-4d34-a844-099c4df46eea",
+          "name": "/userdiscussions/{id}/comment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User ID",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511"
+                },
+                {
+                  "description": "Message",
+                  "key": "Message",
+                  "type": "text",
+                  "value": "This is my comment"
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": "2018-07-01 00:00:00"
+                }
+              ]
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions/{id}/comment",
+            "description": "Post a comment on a discussion"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-0de5ac87-1508-48e0-b3c1-827c05811fd0",
+          "name": "/userdiscussions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User ID",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511"
+                },
+                {
+                  "description": "Title",
+                  "key": "Title",
+                  "type": "text",
+                  "value": "My Title"
+                },
+                {
+                  "description": "Content",
+                  "key": "Content",
+                  "type": "text",
+                  "value": "Discussion content"
+                },
+                {
+                  "description": "Scope",
+                  "key": "Scope",
+                  "type": "text",
+                  "value": "public"
+                },
+                {
+                  "description": "Image URL",
+                  "key": "ImageURL",
+                  "type": "text",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg"
+                },
+                {
+                  "description": "Thumbnail URL (Optional)",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": "2018-07-01 00:00:00",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions?Scope=public",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "userdiscussions"
+              ],
+              "query": [
+                {
+                  "key": "Scope",
+                  "value": "public",
+                  "equals": true,
+                  "description": "Scope"
+                },
+                {
+                  "key": "UserID",
+                  "value": "511",
+                  "description": "User ID (Optional)",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "Rows",
+                  "value": "10",
+                  "description": "Rows (Optional)",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "Page",
+                  "value": "1",
+                  "description": "Page (Optional)",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "SortBy",
+                  "value": "DateUpdated",
+                  "description": "Sort By (Optional)",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "SortOrder",
+                  "value": "DESC",
+                  "description": "Sort Order (Optional)",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get discussions"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-5ab93706-73fb-4742-b301-5f225d4f4f6c",
+          "name": "/userdiscussions/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "description": "User ID",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511"
+                },
+                {
+                  "description": "Title",
+                  "key": "Title",
+                  "type": "text",
+                  "value": "My Title"
+                },
+                {
+                  "description": "Content",
+                  "key": "Content",
+                  "type": "text",
+                  "value": "Discussion content"
+                },
+                {
+                  "description": "Scope",
+                  "key": "Scope",
+                  "type": "text",
+                  "value": "public"
+                },
+                {
+                  "description": "Image URL",
+                  "key": "ImageURL",
+                  "type": "text",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg"
+                },
+                {
+                  "description": "Thumbnail URL (Optional)",
+                  "key": "ThumbnailURL",
+                  "type": "text",
+                  "value": "//d2pil9hl7m4qq3.cloudfront.net/braintrainers/520x370/trainer-i_have.jpg",
+                  "disabled": true
+                },
+                {
+                  "description": "Date Created (Optional)",
+                  "key": "DateCreated",
+                  "type": "text",
+                  "value": "2018-07-01 00:00:00",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions/1",
+              "protocol": "https",
+              "host": [
+                "allgoodapi",
+                "itsallgoodhere",
+                "net"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "userdiscussions",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "Scope",
+                  "value": "public",
+                  "equals": true,
+                  "description": "Scope",
+                  "disabled": true
+                },
+                {
+                  "description": "User ID (Optional)",
+                  "key": "UserID",
+                  "type": "text",
+                  "value": "511",
+                  "disabled": true
+                },
+                {
+                  "description": "Rows (Optional)",
+                  "key": "Rows",
+                  "type": "text",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "description": "Page (Optional)",
+                  "key": "Page",
+                  "type": "text",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "description": "Sort By (Optional)",
+                  "key": "SortBy",
+                  "type": "text",
+                  "value": "DateUpdated",
+                  "disabled": true
+                },
+                {
+                  "description": "Sort Order (Optional)",
+                  "key": "SortOrder",
+                  "type": "text",
+                  "value": "DESC",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get discussion"
+          },
+          "response": []
         }
       ]
     },
