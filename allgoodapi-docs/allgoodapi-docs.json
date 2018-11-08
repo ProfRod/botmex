@@ -8937,6 +8937,34 @@
           ]
         }
       ]
+    },
+    {
+      "_postman_id": "5681180-e2059b9d-e3fb-43dd-a438-f145fb6d8493",
+      "name": "Settings",
+      "description": "API endpoints for Site settings",
+      "item": [
+        {
+          "_postman_id": "5681180-5c6fa75a-512d-457b-a1b0-c9d8c4811aa0",
+          "name": "/settings/countries",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://allgoodapi.itsallgoodhere.net/api/v1/settings/countries",
+            "description": "Get the list of countries available"
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "event": [
