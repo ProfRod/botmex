@@ -8965,6 +8965,55 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "5681180-dd1e4c05-64c1-4362-b07d-164446527a42",
+      "name": "Messages",
+      "description": "Messages API Endpoints",
+      "item": [
+        {
+          "_postman_id": "5681180-e5984996-ea51-415e-9c8c-8f0e60fe8114",
+          "name": "/messages/templates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "http://allgoodapi.virtual.ph/api/v1/messages/templates",
+            "description": "Get message templates"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5681180-808f5edd-9f57-47e1-b330-ee00617c6068",
+          "name": "/messages/{id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "type": "text",
+                "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "http://allgoodapi.virtual.ph/api/v1/messages/219",
+            "description": "Get message"
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "event": [
