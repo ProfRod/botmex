@@ -9008,7 +9008,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "http://allgoodapi.virtual.ph/api/v1/messages/219",
+            "url": "http://allgoodapi.virtual.ph/api/v1/users/122/inboxitem/99",
             "description": "Get message"
           },
           "response": []
