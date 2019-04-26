@@ -7,13 +7,11 @@
   },
   "item": [
     {
-      "_postman_id": "5681180-63224465-0a46-428f-a5ab-f34b49b7c073",
       "name": "Authentication",
-      "description": "Authentication endpoint",
       "item": [
         {
-          "_postman_id": "5681180-2788a841-1195-4786-b808-92b321febdd5",
           "name": "/authenticate",
+          "_postman_id": "5681180-2788a841-1195-4786-b808-92b321febdd5",
           "request": {
             "method": "POST",
             "header": [
@@ -186,6 +184,8 @@
           ]
         }
       ],
+      "_postman_id": "5681180-63224465-0a46-428f-a5ab-f34b49b7c073",
+      "description": "Authentication endpoint",
       "event": [
         {
           "listen": "prerequest",
@@ -210,13 +210,11 @@
       ]
     },
     {
-      "_postman_id": "5681180-c0c1ebe1-f406-479c-98c3-ddd558b63dcf",
       "name": "Users",
-      "description": "",
       "item": [
         {
-          "_postman_id": "5681180-aef66155-e14d-4748-926b-a1b992f5229a",
           "name": "/users",
+          "_postman_id": "5681180-aef66155-e14d-4748-926b-a1b992f5229a",
           "request": {
             "method": "POST",
             "header": [
@@ -566,8 +564,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-dbeffeeb-d119-4e68-9b32-ea08fc7878c5",
           "name": "/users/{id}",
+          "_postman_id": "5681180-dbeffeeb-d119-4e68-9b32-ea08fc7878c5",
           "request": {
             "method": "GET",
             "header": [
@@ -577,10 +575,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}",
             "description": "Get a user"
           },
@@ -597,10 +591,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511"
               },
               "status": "OK",
@@ -652,10 +642,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/5110"
               },
               "status": "Not Found",
@@ -698,8 +684,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-23482cc2-dad5-43c9-ba4c-33e10f710cbb",
           "name": "/users/{id}",
+          "_postman_id": "5681180-23482cc2-dad5-43c9-ba4c-33e10f710cbb",
           "request": {
             "method": "POST",
             "header": [
@@ -937,8 +923,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-7ba4efe1-71c1-4999-a951-99ec6498f9c5",
           "name": "/users/forgotpassword",
+          "_postman_id": "5681180-7ba4efe1-71c1-4999-a951-99ec6498f9c5",
           "request": {
             "method": "POST",
             "header": [
@@ -1093,8 +1079,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-7a1b988c-1a57-437b-8783-76a9d5b0c7d5",
           "name": "/users/resetpassword",
+          "_postman_id": "5681180-7a1b988c-1a57-437b-8783-76a9d5b0c7d5",
           "request": {
             "method": "POST",
             "header": [
@@ -1281,8 +1267,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-0713ae3c-0b31-47b6-8dbf-aca204ae7ecf",
           "name": "/users/verify",
+          "_postman_id": "5681180-0713ae3c-0b31-47b6-8dbf-aca204ae7ecf",
           "request": {
             "method": "POST",
             "header": [
@@ -1466,8 +1452,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-94a1e6cd-61f0-4a1b-9cf5-8940a02f1e77",
           "name": "/users/{id}/positivitypoints",
+          "_postman_id": "5681180-94a1e6cd-61f0-4a1b-9cf5-8940a02f1e77",
           "request": {
             "method": "POST",
             "header": [
@@ -1501,8 +1487,8 @@
           "response": []
         },
         {
-          "_postman_id": "5681180-cca73a87-3e4a-498b-8198-864c09f5ba7a",
           "name": "/users/{id}/following?UserID={followerid}",
+          "_postman_id": "5681180-cca73a87-3e4a-498b-8198-864c09f5ba7a",
           "request": {
             "method": "GET",
             "header": [
@@ -1512,10 +1498,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/following?UserID={followerid}",
               "protocol": "https",
@@ -1534,8 +1516,7 @@
               "query": [
                 {
                   "key": "UserID",
-                  "value": "{followerid}",
-                  "equals": true
+                  "value": "{followerid}"
                 }
               ]
             },
@@ -1554,10 +1535,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/following?UserID=111",
                   "protocol": "https",
@@ -1576,8 +1553,7 @@
                   "query": [
                     {
                       "key": "UserID",
-                      "value": "111",
-                      "equals": true
+                      "value": "111"
                     }
                   ]
                 }
@@ -1631,10 +1607,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/following?UserID=111",
                   "protocol": "https",
@@ -1653,8 +1625,7 @@
                   "query": [
                     {
                       "key": "UserID",
-                      "value": "111",
-                      "equals": true
+                      "value": "111"
                     }
                   ]
                 }
@@ -1699,8 +1670,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-cbf4e911-8cbc-45bd-864a-1f6c258a36ed",
           "name": "/users/{id}/follow",
+          "_postman_id": "5681180-cbf4e911-8cbc-45bd-864a-1f6c258a36ed",
           "request": {
             "method": "POST",
             "header": [
@@ -1935,8 +1906,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-f15f71b6-01ce-42f3-9acf-55912134808c",
           "name": "/users/{id}/unfollow",
+          "_postman_id": "5681180-f15f71b6-01ce-42f3-9acf-55912134808c",
           "request": {
             "method": "POST",
             "header": [
@@ -2038,8 +2009,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-00e13eae-9145-46cc-95c7-781a9c41f875",
           "name": "/users/{id}/followers",
+          "_postman_id": "5681180-00e13eae-9145-46cc-95c7-781a9c41f875",
           "request": {
             "method": "GET",
             "header": [
@@ -2049,10 +2020,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/followers?CountOnly=0",
               "protocol": "https",
@@ -2072,7 +2039,6 @@
                 {
                   "key": "CountOnly",
                   "value": "0",
-                  "equals": true,
                   "description": "Flag to specify if value returned is just follower count (Optional) "
                 }
               ]
@@ -2092,10 +2058,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followers"
               },
               "status": "OK",
@@ -2147,10 +2109,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followers"
               },
               "status": "Not Found",
@@ -2202,10 +2160,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/followers?CountOnly=0",
                   "protocol": "https",
@@ -2225,7 +2179,6 @@
                     {
                       "key": "CountOnly",
                       "value": "0",
-                      "equals": true,
                       "description": "Flag to specify if value returned is just a count of followers (Optional) "
                     }
                   ]
@@ -2271,8 +2224,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-792628a8-2769-4f69-8ec2-37f83df084b8",
           "name": "/users/{id}/followed",
+          "_postman_id": "5681180-792628a8-2769-4f69-8ec2-37f83df084b8",
           "request": {
             "method": "GET",
             "header": [
@@ -2282,10 +2235,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/followed?CountOnly=0",
               "protocol": "https",
@@ -2305,7 +2254,6 @@
                 {
                   "key": "CountOnly",
                   "value": "0",
-                  "equals": true,
                   "description": "Flag to specify if value returned is just followed count (Optional) "
                 }
               ]
@@ -2325,10 +2273,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followed"
               },
               "status": "Not Found",
@@ -2380,10 +2324,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followed"
               },
               "status": "OK",
@@ -2435,10 +2375,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/followed?CountOnly=1",
                   "protocol": "https",
@@ -2458,7 +2394,6 @@
                     {
                       "key": "CountOnly",
                       "value": "1",
-                      "equals": true,
                       "description": "Flag to specify if value returned is just followed count (Optional) "
                     }
                   ]
@@ -2504,8 +2439,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-333f16d2-4893-471e-9a98-b2eafa422de5",
           "name": "/usermoods",
+          "_postman_id": "5681180-333f16d2-4893-471e-9a98-b2eafa422de5",
           "request": {
             "method": "POST",
             "header": [
@@ -2619,8 +2554,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-aec4653a-12bf-40a1-b459-e08fd1d0c76d",
           "name": "/usermoods/latest/{id}",
+          "_postman_id": "5681180-aec4653a-12bf-40a1-b459-e08fd1d0c76d",
           "request": {
             "method": "GET",
             "header": [
@@ -2630,10 +2565,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods/latest/{id}",
             "description": "Get the user's latest mood"
           },
@@ -2650,10 +2581,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods/latest/511"
               },
               "status": "OK",
@@ -2696,8 +2623,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-dfd19dd1-dbe6-4525-a36f-a65b1c33059a",
           "name": "/usermoods",
+          "_postman_id": "5681180-dfd19dd1-dbe6-4525-a36f-a65b1c33059a",
           "request": {
             "method": "GET",
             "header": [
@@ -2707,10 +2634,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods?UserID=511&StartDate=2018-01-01 00:00:00&EndDate=2018-11-01 00:00:00",
               "protocol": "https",
@@ -2728,19 +2651,16 @@
                 {
                   "key": "UserID",
                   "value": "511",
-                  "equals": true,
                   "description": "User ID"
                 },
                 {
                   "key": "StartDate",
                   "value": "2018-01-01 00:00:00",
-                  "equals": true,
                   "description": "Start Date (Optional)"
                 },
                 {
                   "key": "EndDate",
                   "value": "2018-11-01 00:00:00",
-                  "equals": true,
                   "description": "End Date (Optional)"
                 }
               ]
@@ -2760,10 +2680,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/usermoods?UserID=511&StartDate=2018-01-01 00:00:00&EndDate=2018-11-01 00:00:00",
                   "protocol": "https",
@@ -2781,19 +2697,16 @@
                     {
                       "key": "UserID",
                       "value": "511",
-                      "equals": true,
                       "description": "User ID"
                     },
                     {
                       "key": "StartDate",
                       "value": "2018-01-01 00:00:00",
-                      "equals": true,
                       "description": "Start Date (Optional)"
                     },
                     {
                       "key": "EndDate",
                       "value": "2018-11-01 00:00:00",
-                      "equals": true,
                       "description": "End Date (Optional)"
                     }
                   ]
@@ -2839,8 +2752,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-722756c7-7576-4071-988e-13ac57d5224d",
           "name": "/users/{id}/favorites",
+          "_postman_id": "5681180-722756c7-7576-4071-988e-13ac57d5224d",
           "request": {
             "method": "GET",
             "header": [
@@ -2850,10 +2763,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/{id}/favorites?TypeID=1",
               "protocol": "https",
@@ -2873,7 +2782,6 @@
                 {
                   "key": "TypeID",
                   "value": "1",
-                  "equals": true,
                   "description": "Favorite Type ID"
                 }
               ]
@@ -2893,10 +2801,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/511/favorites?TypeID=1",
                   "protocol": "https",
@@ -2916,7 +2820,6 @@
                     {
                       "key": "TypeID",
                       "value": "1",
-                      "equals": true,
                       "description": "Favorite Type ID"
                     }
                   ]
@@ -2962,8 +2865,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-7d80a0f2-f117-4b82-a24b-d4ed52a15b94",
           "name": "/userfavorites",
+          "_postman_id": "5681180-7d80a0f2-f117-4b82-a24b-d4ed52a15b94",
           "request": {
             "method": "POST",
             "header": [
@@ -3089,8 +2992,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-70c0e05c-09b1-487c-9e1f-491a1107453e",
           "name": "/userfavorites",
+          "_postman_id": "5681180-70c0e05c-09b1-487c-9e1f-491a1107453e",
           "request": {
             "method": "GET",
             "header": [
@@ -3100,10 +3003,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites?UserID=511&TypeID=1&FavoriteID=71",
               "protocol": "https",
@@ -3153,10 +3052,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites?UserID=511&TypeID=1&FavoriteID=71",
                   "protocol": "https",
@@ -3174,19 +3069,16 @@
                     {
                       "key": "UserID",
                       "value": "511",
-                      "equals": true,
                       "description": "User ID"
                     },
                     {
                       "key": "TypeID",
                       "value": "1",
-                      "equals": true,
                       "description": "Favorite Type ID"
                     },
                     {
                       "key": "FavoriteID",
                       "value": "71",
-                      "equals": true,
                       "description": "Item ID"
                     }
                   ]
@@ -3241,10 +3133,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userfavorites?UserID=511&TypeID=1&FavoriteID=72",
                   "protocol": "https",
@@ -3262,19 +3150,16 @@
                     {
                       "key": "UserID",
                       "value": "511",
-                      "equals": true,
                       "description": "User ID"
                     },
                     {
                       "key": "TypeID",
                       "value": "1",
-                      "equals": true,
                       "description": "Favorite Type ID"
                     },
                     {
                       "key": "FavoriteID",
                       "value": "72",
-                      "equals": true,
                       "description": "Item ID"
                     }
                   ]
@@ -3320,8 +3205,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-276e11de-daac-4788-bf64-8b5b67de306e",
           "name": "/users/search?Query={search}",
+          "_postman_id": "5681180-276e11de-daac-4788-bf64-8b5b67de306e",
           "request": {
             "method": "GET",
             "header": [
@@ -3331,10 +3216,6 @@
                 "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/search?Query=user@domain.com",
               "protocol": "https",
@@ -3352,8 +3233,7 @@
               "query": [
                 {
                   "key": "Query",
-                  "value": "user@domain.com",
-                  "equals": true
+                  "value": "user@domain.com"
                 }
               ]
             },
@@ -3372,10 +3252,6 @@
                     "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/search?Query=someuser",
                   "protocol": "https",
@@ -3393,8 +3269,7 @@
                   "query": [
                     {
                       "key": "Query",
-                      "value": "someuser",
-                      "equals": true
+                      "value": "someuser"
                     }
                   ]
                 }
@@ -3448,10 +3323,6 @@
                     "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/users/search?Query=user@domain.com",
                   "protocol": "https",
@@ -3469,8 +3340,7 @@
                   "query": [
                     {
                       "key": "Query",
-                      "value": "user@domain.com",
-                      "equals": true
+                      "value": "user@domain.com"
                     }
                   ]
                 }
@@ -3515,8 +3385,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-f50cfd59-7d28-4eb0-a922-e08b326db2cc",
           "name": "/userdiscussions",
+          "_postman_id": "5681180-f50cfd59-7d28-4eb0-a922-e08b326db2cc",
           "request": {
             "method": "POST",
             "header": [
@@ -3587,8 +3457,8 @@
           "response": []
         },
         {
-          "_postman_id": "5681180-346731e1-32dd-45db-86c1-f1ea33ae6f8c",
           "name": "/userdiscussions/{id}",
+          "_postman_id": "5681180-346731e1-32dd-45db-86c1-f1ea33ae6f8c",
           "request": {
             "method": "POST",
             "header": [
@@ -3651,8 +3521,8 @@
           "response": []
         },
         {
-          "_postman_id": "5681180-a605cbb4-1eaa-4d34-a844-099c4df46eea",
           "name": "/userdiscussions/{id}/comment",
+          "_postman_id": "5681180-a605cbb4-1eaa-4d34-a844-099c4df46eea",
           "request": {
             "method": "POST",
             "header": [
@@ -3697,8 +3567,8 @@
           "response": []
         },
         {
-          "_postman_id": "5681180-0de5ac87-1508-48e0-b3c1-827c05811fd0",
           "name": "/userdiscussions",
+          "_postman_id": "5681180-0de5ac87-1508-48e0-b3c1-827c05811fd0",
           "request": {
             "method": "GET",
             "header": [
@@ -3780,7 +3650,6 @@
                 {
                   "key": "Scope",
                   "value": "public",
-                  "equals": true,
                   "description": "Scope"
                 },
                 {
@@ -3825,8 +3694,8 @@
           "response": []
         },
         {
-          "_postman_id": "5681180-5ab93706-73fb-4742-b301-5f225d4f4f6c",
           "name": "/userdiscussions/{id}",
+          "_postman_id": "5681180-5ab93706-73fb-4742-b301-5f225d4f4f6c",
           "request": {
             "method": "GET",
             "header": [
@@ -3892,7 +3761,7 @@
               ]
             },
             "url": {
-              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions/1",
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userdiscussions/1?",
               "protocol": "https",
               "host": [
                 "allgoodapi",
@@ -3909,7 +3778,6 @@
                 {
                   "key": "Scope",
                   "value": "public",
-                  "equals": true,
                   "description": "Scope",
                   "disabled": true
                 },
@@ -3954,16 +3822,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "5681180-c0c1ebe1-f406-479c-98c3-ddd558b63dcf"
     },
     {
-      "_postman_id": "5681180-436a7c01-27d9-42ce-8b9a-ac67f9b2ac8c",
       "name": "Challenges",
-      "description": "",
       "item": [
         {
-          "_postman_id": "5681180-f79d7e35-6d6b-46f0-b9d3-d26aa7e9004f",
           "name": "/challenges",
+          "_postman_id": "5681180-f79d7e35-6d6b-46f0-b9d3-d26aa7e9004f",
           "request": {
             "method": "POST",
             "header": [
@@ -4214,8 +4081,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-6384b9a2-2da7-4d8d-ae70-6c3bde545657",
           "name": "/challenges",
+          "_postman_id": "5681180-6384b9a2-2da7-4d8d-ae70-6c3bde545657",
           "request": {
             "method": "GET",
             "header": [
@@ -4225,12 +4092,8 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
-              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges",
+              "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges?",
               "protocol": "https",
               "host": [
                 "allgoodapi",
@@ -4246,13 +4109,11 @@
                 {
                   "key": "SeparateActive",
                   "value": "0",
-                  "equals": true,
                   "disabled": true
                 },
                 {
                   "key": "UserID",
                   "value": "0",
-                  "equals": true,
                   "disabled": true
                 }
               ]
@@ -4272,10 +4133,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges?CategoryID=394&TypeID=1&Frequency=daily&Status=1",
                   "protocol": "https",
@@ -4292,34 +4149,28 @@
                   "query": [
                     {
                       "key": "CategoryID",
-                      "value": "394",
-                      "equals": true
+                      "value": "394"
                     },
                     {
                       "key": "TypeID",
-                      "value": "1",
-                      "equals": true
+                      "value": "1"
                     },
                     {
                       "key": "Frequency",
-                      "value": "daily",
-                      "equals": true
+                      "value": "daily"
                     },
                     {
                       "key": "Status",
-                      "value": "1",
-                      "equals": true
+                      "value": "1"
                     },
                     {
                       "key": "SeparateActive",
                       "value": "0",
-                      "equals": true,
                       "disabled": true
                     },
                     {
                       "key": "UserID",
                       "value": "0",
-                      "equals": true,
                       "disabled": true
                     }
                   ]
@@ -4365,8 +4216,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-5404242e-f617-4e09-b77b-0a20b289fb76",
           "name": "/challenges/{id}",
+          "_postman_id": "5681180-5404242e-f617-4e09-b77b-0a20b289fb76",
           "request": {
             "method": "GET",
             "header": [
@@ -4376,10 +4227,6 @@
                 "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges/{id}",
             "description": "Get a specific challenge\n\nIf the UserID parameter is supplied, this call will look for active brain trainers of the User for this challenge"
           },
@@ -4396,10 +4243,6 @@
                     "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges/28?UserID=511",
                   "protocol": "https",
@@ -4417,8 +4260,7 @@
                   "query": [
                     {
                       "key": "UserID",
-                      "value": "511",
-                      "equals": true
+                      "value": "511"
                     }
                   ]
                 }
@@ -4472,10 +4314,6 @@
                     "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/challenges/28"
               },
               "status": "OK",
@@ -4518,8 +4356,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-aac76bb3-7ef8-4473-b613-ccb8a85765b5",
           "name": "/userchallenges",
+          "_postman_id": "5681180-aac76bb3-7ef8-4473-b613-ccb8a85765b5",
           "request": {
             "method": "GET",
             "header": [
@@ -4529,10 +4367,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges?UserID=511&Status=2&ChallengeID=28",
               "protocol": "https",
@@ -4550,19 +4384,16 @@
                 {
                   "key": "UserID",
                   "value": "511",
-                  "equals": true,
                   "description": "User ID (Optional)"
                 },
                 {
                   "key": "Status",
                   "value": "2",
-                  "equals": true,
                   "description": "User Challenge Status (Optional)"
                 },
                 {
                   "key": "ChallengeID",
                   "value": "28",
-                  "equals": true,
                   "description": "Challenge ID (Optional)"
                 }
               ]
@@ -4582,10 +4413,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges?UserID=511&Status=2&ChallengeID=28",
                   "protocol": "https",
@@ -4603,19 +4430,16 @@
                     {
                       "key": "UserID",
                       "value": "511",
-                      "equals": true,
                       "description": "User ID (Optional)"
                     },
                     {
                       "key": "Status",
                       "value": "2",
-                      "equals": true,
                       "description": "User Challenge Status (Optional)"
                     },
                     {
                       "key": "ChallengeID",
                       "value": "28",
-                      "equals": true,
                       "description": "Challenge ID (Optional)"
                     }
                   ]
@@ -4661,8 +4485,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-d43c2765-d13a-43a6-8e79-b83c48728132",
           "name": "/userchallenges",
+          "_postman_id": "5681180-d43c2765-d13a-43a6-8e79-b83c48728132",
           "request": {
             "method": "POST",
             "header": [
@@ -4848,8 +4672,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-a2c6fc5f-6d28-4fd2-872b-e3954e279068",
           "name": "/userchallenges/{id}",
+          "_postman_id": "5681180-a2c6fc5f-6d28-4fd2-872b-e3954e279068",
           "request": {
             "method": "GET",
             "header": [
@@ -4859,10 +4683,6 @@
                 "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/{id}?IncludeChallenge=1",
               "protocol": "https",
@@ -4881,7 +4701,6 @@
                 {
                   "key": "IncludeChallenge",
                   "value": "1",
-                  "equals": true,
                   "description": "Include Challenge (Optional)"
                 }
               ]
@@ -4901,10 +4720,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges?UserID=511&Status=2&ChallengeID=28",
                   "protocol": "https",
@@ -4922,19 +4737,16 @@
                     {
                       "key": "UserID",
                       "value": "511",
-                      "equals": true,
                       "description": "User ID (Optional)"
                     },
                     {
                       "key": "Status",
                       "value": "2",
-                      "equals": true,
                       "description": "User Challenge Status (Optional)"
                     },
                     {
                       "key": "ChallengeID",
                       "value": "28",
-                      "equals": true,
                       "description": "Challenge ID (Optional)"
                     }
                   ]
@@ -4989,10 +4801,6 @@
                     "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/5?IncludeChallenge=1",
                   "protocol": "https",
@@ -5011,7 +4819,6 @@
                     {
                       "key": "IncludeChallenge",
                       "value": "1",
-                      "equals": true,
                       "description": "Include Challenge (Optional)"
                     }
                   ]
@@ -5057,8 +4864,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-06257d06-b19d-49cd-bbe5-8ec52d430f7f",
           "name": "/userchallenges/{id}",
+          "_postman_id": "5681180-06257d06-b19d-49cd-bbe5-8ec52d430f7f",
           "request": {
             "method": "POST",
             "header": [
@@ -5172,8 +4979,11 @@
           ]
         },
         {
-          "_postman_id": "5681180-2dc5261d-0aa6-4c26-8268-981db4916186",
           "name": "/userchallenges/{id}/comment",
+          "_postman_id": "5681180-2dc5261d-0aa6-4c26-8268-981db4916186",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -5287,8 +5097,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-21d7da1b-3892-4f4b-a7bb-18dc716ce60c",
           "name": "/userchallenges/{id}/quit",
+          "_postman_id": "5681180-21d7da1b-3892-4f4b-a7bb-18dc716ce60c",
           "request": {
             "method": "POST",
             "header": [
@@ -5476,8 +5286,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-3e0ec90b-67e2-46e6-bf51-62eabe4dd23f",
           "name": "/userchallenges/{id}/expire",
+          "_postman_id": "5681180-3e0ec90b-67e2-46e6-bf51-62eabe4dd23f",
           "request": {
             "method": "POST",
             "header": [
@@ -5487,7 +5297,10 @@
                 "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/{id}/expire",
             "description": "Mark an expired user challenge as complete"
           },
@@ -5504,7 +5317,10 @@
                     "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userchallenges/2/expire"
               },
               "status": "OK",
@@ -5547,8 +5363,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-f44d0283-016f-4ff4-9b2a-7f23304d0ab2",
           "name": "/userjournalgroups",
+          "_postman_id": "5681180-f44d0283-016f-4ff4-9b2a-7f23304d0ab2",
           "request": {
             "method": "POST",
             "header": [
@@ -5662,8 +5478,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-48feaac7-b3f5-47c0-825d-5461b0a896f9",
           "name": "/userjournalgroups/{id}",
+          "_postman_id": "5681180-48feaac7-b3f5-47c0-825d-5461b0a896f9",
           "request": {
             "method": "GET",
             "header": [
@@ -5679,7 +5495,10 @@
                 "value": "application/x-www-form-urlencoded"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
             "url": {
               "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups/2?IncludeJournalEntries=1",
               "protocol": "https",
@@ -5698,7 +5517,6 @@
                 {
                   "key": "IncludeJournalEntries",
                   "value": "1",
-                  "equals": true,
                   "description": "Include journals flag (Optional) "
                 }
               ]
@@ -5724,7 +5542,10 @@
                     "value": "application/x-www-form-urlencoded"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": []
+                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups/2"
               },
               "status": "OK",
@@ -5782,7 +5603,10 @@
                     "value": "application/x-www-form-urlencoded"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": []
+                },
                 "url": {
                   "raw": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournalgroups/2?IncludeJournalEntries=1",
                   "protocol": "https",
@@ -5800,8 +5624,7 @@
                   "query": [
                     {
                       "key": "IncludeJournalEntries",
-                      "value": "1",
-                      "equals": true
+                      "value": "1"
                     }
                   ]
                 }
@@ -5846,8 +5669,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-a52536d9-68ac-46fe-b5ae-026243b14687",
           "name": "/userjournals",
+          "_postman_id": "5681180-a52536d9-68ac-46fe-b5ae-026243b14687",
           "request": {
             "method": "POST",
             "header": [
@@ -6000,8 +5823,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-94c9b915-7c0e-42af-a2b4-def73753d75f",
           "name": "/userjournals/{id}",
+          "_postman_id": "5681180-94c9b915-7c0e-42af-a2b4-def73753d75f",
           "request": {
             "method": "GET",
             "header": [
@@ -6017,7 +5840,10 @@
                 "value": "application/x-www-form-urlencoded"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
             "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournals/8",
             "description": "get journal entry"
           },
@@ -6040,7 +5866,10 @@
                     "value": "application/x-www-form-urlencoded"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": []
+                },
                 "url": "https://allgoodapi.itsallgoodhere.net/api/v1/userjournals/8"
               },
               "status": "OK",
@@ -6083,8 +5912,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-f180a218-426e-494b-83fc-b28db7818523",
           "name": "/userchallengemilestones",
+          "_postman_id": "5681180-f180a218-426e-494b-83fc-b28db7818523",
           "request": {
             "method": "PUT",
             "header": [
@@ -6221,16 +6050,15 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "5681180-436a7c01-27d9-42ce-8b9a-ac67f9b2ac8c"
     },
     {
-      "_postman_id": "5681180-5686f45f-b37b-46b4-8adb-c5f514d015eb",
       "name": "Contents",
-      "description": "API Calls related to Mood Flippers and Stories that Heal",
       "item": [
         {
-          "_postman_id": "5681180-e2d23761-5771-4f83-9618-8ec547ca6f89",
           "name": "/contents",
+          "_postman_id": "5681180-e2d23761-5771-4f83-9618-8ec547ca6f89",
           "request": {
             "method": "POST",
             "header": [
@@ -6387,110 +6215,93 @@
                     {
                       "key": "TypeID",
                       "value": " 3",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "CategoryID",
                       "value": " 387",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "Name",
                       "value": " My Quick Flip",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "Description",
                       "value": " My First Quick Flip",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "URL",
                       "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "ThumbnailURL",
                       "value": " //d2pil9hl7m4qq3.cloudfront.net/quickflipsphototype/thumbnails/nature/1.png",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "UserGenFlag",
                       "value": " 0",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "PublishedFlag",
                       "value": " 1",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "ShareOptionID",
                       "value": " 1",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "ByLine",
                       "value": " ",
                       "type": "text",
-                      "description": "",
                       "disabled": true
                     },
                     {
                       "key": "DateCreated",
                       "value": " 2018-07-01 00:00:00",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     },
                     {
                       "key": "DateUpdated",
                       "value": " ",
                       "type": "text",
-                      "description": "",
                       "disabled": true
                     },
                     {
                       "key": "UserID",
                       "value": " ",
                       "type": "text",
-                      "description": "",
                       "disabled": true
                     },
                     {
                       "key": "DatePublished",
                       "value": "",
                       "type": "text",
-                      "description": "",
                       "disabled": true
                     },
                     {
                       "key": "StartTime",
                       "value": "",
                       "type": "text",
-                      "description": "",
                       "disabled": true
                     },
                     {
                       "key": "EndTime",
                       "value": "",
                       "type": "text",
-                      "description": "",
                       "disabled": true
                     },
                     {
                       "key": "Status",
                       "value": " 1",
-                      "type": "text",
-                      "description": ""
+                      "type": "text"
                     }
                   ]
                 },
@@ -6536,8 +6347,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-aeb14920-52c9-4e57-977d-8686b0f32b01",
           "name": "/contents/{id}",
+          "_postman_id": "5681180-aeb14920-52c9-4e57-977d-8686b0f32b01",
           "request": {
             "method": "POST",
             "header": [
@@ -6843,8 +6654,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-f6f9fd02-3549-4a32-8c98-e11aa219eb5e",
           "name": "/contents/{id}/rate",
+          "_postman_id": "5681180-f6f9fd02-3549-4a32-8c98-e11aa219eb5e",
           "request": {
             "method": "POST",
             "header": [
@@ -6958,8 +6769,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-b6952551-44b0-43fa-a23b-1b70f8a48f10",
           "name": "/contents",
+          "_postman_id": "5681180-b6952551-44b0-43fa-a23b-1b70f8a48f10",
           "request": {
             "method": "GET",
             "header": [
@@ -7307,8 +7118,7 @@
                   "query": [
                     {
                       "key": "TypeID",
-                      "value": "3",
-                      "equals": true
+                      "value": "3"
                     },
                     {
                       "key": "CategoryID",
@@ -7354,8 +7164,7 @@
                     },
                     {
                       "key": "Search",
-                      "value": "Purple",
-                      "equals": true
+                      "value": "Purple"
                     }
                   ]
                 }
@@ -7400,8 +7209,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-078b45af-6093-444b-a2a1-bee45c3b1721",
           "name": "/contents/paginated",
+          "_postman_id": "5681180-078b45af-6093-444b-a2a1-bee45c3b1721",
           "request": {
             "method": "GET",
             "header": [
@@ -7547,13 +7356,11 @@
               "query": [
                 {
                   "key": "TypeID",
-                  "value": "3",
-                  "equals": true
+                  "value": "3"
                 },
                 {
                   "key": "CategoryID",
-                  "value": "387",
-                  "equals": true
+                  "value": "387"
                 },
                 {
                   "key": "UserID",
@@ -7563,8 +7370,7 @@
                 },
                 {
                   "key": "Status",
-                  "value": " 1",
-                  "equals": true
+                  "value": " 1"
                 },
                 {
                   "key": "SortOrder",
@@ -7765,13 +7571,11 @@
                   "query": [
                     {
                       "key": "TypeID",
-                      "value": "3",
-                      "equals": true
+                      "value": "3"
                     },
                     {
                       "key": "CategoryID",
-                      "value": "387",
-                      "equals": true
+                      "value": "387"
                     },
                     {
                       "key": "UserID",
@@ -7781,8 +7585,7 @@
                     },
                     {
                       "key": "Status",
-                      "value": " 1",
-                      "equals": true
+                      "value": " 1"
                     },
                     {
                       "key": "SortOrder",
@@ -7810,13 +7613,11 @@
                     },
                     {
                       "key": "Page",
-                      "value": "2",
-                      "equals": true
+                      "value": "2"
                     },
                     {
                       "key": "Rows",
-                      "value": "5",
-                      "equals": true
+                      "value": "5"
                     },
                     {
                       "key": "Private",
@@ -7873,8 +7674,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-6394148b-dd06-476e-b4f4-6bab68f122fc",
           "name": "/contents/{id}",
+          "_postman_id": "5681180-6394148b-dd06-476e-b4f4-6bab68f122fc",
           "request": {
             "method": "GET",
             "header": [
@@ -8350,8 +8151,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-8d59ff82-3b6d-4650-845d-32d02413f397",
           "name": "/contents/{id}/next",
+          "_postman_id": "5681180-8d59ff82-3b6d-4650-845d-32d02413f397",
           "request": {
             "method": "GET",
             "header": [
@@ -8498,8 +8299,7 @@
               "query": [
                 {
                   "key": "CategoryID",
-                  "value": "387",
-                  "equals": true
+                  "value": "387"
                 }
               ]
             },
@@ -8655,8 +8455,7 @@
                   "query": [
                     {
                       "key": "CategoryID",
-                      "value": "387",
-                      "equals": true
+                      "value": "387"
                     }
                   ]
                 }
@@ -8701,8 +8500,8 @@
           ]
         },
         {
-          "_postman_id": "5681180-214fc88d-e6cd-4845-b07e-accfda1c8323",
           "name": "/contents/{id}/previous",
+          "_postman_id": "5681180-214fc88d-e6cd-4845-b07e-accfda1c8323",
           "request": {
             "method": "GET",
             "header": [
@@ -8849,8 +8648,7 @@
               "query": [
                 {
                   "key": "CategoryID",
-                  "value": "387",
-                  "equals": true
+                  "value": "387"
                 }
               ]
             },
@@ -9006,8 +8804,7 @@
                   "query": [
                     {
                       "key": "CategoryID",
-                      "value": "387",
-                      "equals": true
+                      "value": "387"
                     }
                   ]
                 }
@@ -9051,16 +8848,16 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "5681180-5686f45f-b37b-46b4-8adb-c5f514d015eb",
+      "description": "API Calls related to Mood Flippers and Stories that Heal"
     },
     {
-      "_postman_id": "5681180-e2059b9d-e3fb-43dd-a438-f145fb6d8493",
       "name": "Settings",
-      "description": "API endpoints for Site settings",
       "item": [
         {
-          "_postman_id": "5681180-5c6fa75a-512d-457b-a1b0-c9d8c4811aa0",
           "name": "/settings/countries",
+          "_postman_id": "5681180-5c6fa75a-512d-457b-a1b0-c9d8c4811aa0",
           "request": {
             "method": "GET",
             "header": [
@@ -9070,25 +8867,24 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://allgoodapi.itsallgoodhere.net/api/v1/settings/countries",
             "description": "Get the list of countries available"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "5681180-e2059b9d-e3fb-43dd-a438-f145fb6d8493",
+      "description": "API endpoints for Site settings"
     },
     {
-      "_postman_id": "5681180-dd1e4c05-64c1-4362-b07d-164446527a42",
       "name": "Messages",
-      "description": "Messages API Endpoints",
       "item": [
         {
-          "_postman_id": "5681180-e5984996-ea51-415e-9c8c-8f0e60fe8114",
           "name": "/messages/templates",
+          "_postman_id": "5681180-e5984996-ea51-415e-9c8c-8f0e60fe8114",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [
@@ -9098,18 +8894,17 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "http://allgoodapi.virtual.ph/api/v1/messages/templates",
             "description": "Get message templates"
           },
           "response": []
         },
         {
-          "_postman_id": "5681180-808f5edd-9f57-47e1-b330-ee00617c6068",
           "name": "/messages/{id}",
+          "_postman_id": "5681180-808f5edd-9f57-47e1-b330-ee00617c6068",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [
@@ -9119,16 +8914,14 @@
                 "value": "5vdh8qyybuUPuc64c6pP9LyIJ84subMFqjSswomP"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "http://allgoodapi.virtual.ph/api/v1/users/122/inboxitem/99",
             "description": "Get message"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "5681180-dd1e4c05-64c1-4362-b07d-164446527a42",
+      "description": "Messages API Endpoints"
     }
   ],
   "event": [
