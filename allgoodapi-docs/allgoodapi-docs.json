@@ -198,7 +198,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Birth date (Optional)"
           },
           {
@@ -483,7 +482,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Birth date (Optional)"
           },
           {
@@ -520,7 +518,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Join date (Optional)"
           },
           {
@@ -1506,7 +1503,6 @@
             "in": "query",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Start Date (Optional)"
           },
           {
@@ -1514,7 +1510,6 @@
             "in": "query",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "End Date (Optional)"
           },
           {
@@ -2174,7 +2169,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Created (Optional)"
           },
           {
@@ -2243,7 +2237,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Created (Optional)"
           },
           {
@@ -2391,7 +2384,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Creation Date (Optional)"
           },
           {
@@ -3640,7 +3632,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Joined"
           },
           {
@@ -3648,7 +3639,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Started"
           },
           {
@@ -4713,7 +4703,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Completed (Optional)"
           },
           {
@@ -5011,7 +5000,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Completed (Optional)"
           },
           {
@@ -5763,7 +5751,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Milestone Date"
           },
           {
@@ -5936,7 +5923,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Created (Optional)"
           },
           {
@@ -6226,7 +6212,6 @@
             "in": "formData",
             "required": true,
             "type": "string",
-            "format": "date-time",
             "description": "Date Created (Optional)"
           },
           {
