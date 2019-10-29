@@ -13,7 +13,7 @@
     },
     "dependencies": {
         "diskdb": "^0.1.17",
-        "lodash": "^3.10.1",
+        "lodash": "^4.17.13",
         "node-telegram-bot-api": "^0.30.0",
         "swagger-client": "^2.1.8"
     },
