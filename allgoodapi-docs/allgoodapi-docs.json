@@ -26,7 +26,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "AuthenticatePost",
+        "operationId": "/authenticate",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -142,7 +142,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersPost",
+        "operationId": "/users",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -322,7 +322,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersByIdGet",
+        "operationId": "/users/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -426,7 +426,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersByIdPost",
+        "operationId": "Post/users/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -600,7 +600,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersForgotpasswordPost",
+        "operationId": "/users/forgotpassword",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -687,7 +687,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersResetpasswordPost",
+        "operationId": "/users/resetpassword",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -786,7 +786,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersVerifyPost",
+        "operationId": "/users/verify",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -885,7 +885,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Users511PositivitypointsPost",
+        "operationId": "/users/{id}/positivitypoints",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -925,7 +925,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersFollowingByIdGet",
+        "operationId": "/users/{id}/following?UserID={followerid}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1003,7 +1003,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersFollowByIdPost",
+        "operationId": "/users/{id}/follow",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1115,7 +1115,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersUnfollowByIdPost",
+        "operationId": "/users/{id}/unfollow",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1203,7 +1203,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersFollowersByIdGet",
+        "operationId": "/users/{id}/followers",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1298,7 +1298,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersFollowedByIdGet",
+        "operationId": "/users/{id}/followed",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1391,7 +1391,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsermoodsPost",
+        "operationId": "/usermoods",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1484,7 +1484,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsermoodsGet",
+        "operationId": "Get/usermoods",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1583,7 +1583,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsermoodsLatestByIdGet",
+        "operationId": "/usermoods/latest/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1659,7 +1659,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersFavoritesByIdGet",
+        "operationId": "/users/{id}/favorites",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1715,7 +1715,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UserfavoritesPost",
+        "operationId": "/userfavorites",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1811,7 +1811,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UserfavoritesGet",
+        "operationId": "Get/userfavorites",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1898,7 +1898,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UsersSearchGet",
+        "operationId": "/users/search?Query={search}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -1989,7 +1989,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UserdiscussionsPost",
+        "operationId": "/userdiscussions",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -2062,7 +2062,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UserdiscussionsGet",
+        "operationId": "Get/userdiscussions",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -2105,7 +2105,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UserdiscussionsByIdPost",
+        "operationId": "/userdiscussions/{id}",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -2194,7 +2194,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "UserdiscussionsCommentByIdPost",
+        "operationId": "/userdiscussions/{id}/comment",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -2262,7 +2262,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Userdiscussions1Get",
+        "operationId": "Get/userdiscussions/{id}",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -2298,7 +2298,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "ChallengesPost",
+        "operationId": "/challenges",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -2489,7 +2489,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "ChallengesGet",
+        "operationId": "Get/challenges",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -3228,7 +3228,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "ChallengesByIdGet",
+        "operationId": "/challenges/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -3525,7 +3525,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengesGet",
+        "operationId": "/userchallenges",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -3588,7 +3588,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengesPost",
+        "operationId": "Post/userchallenges",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -4162,7 +4162,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengesByIdGet",
+        "operationId": "/userchallenges/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -4667,7 +4667,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengesByIdPost",
+        "operationId": "Post/userchallenges/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -4964,7 +4964,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengesQuitByIdPost",
+        "operationId": "/userchallenges/{id}/quit",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5072,7 +5072,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengesExpireByIdPost",
+        "operationId": "/userchallenges/{id}/expire",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5344,7 +5344,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserjournalgroupsPost",
+        "operationId": "/userjournalgroups",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5438,7 +5438,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "Userjournalgroups2Get",
+        "operationId": "/userjournalgroups/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5522,7 +5522,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserjournalsPost",
+        "operationId": "/userjournals",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5635,7 +5635,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "Userjournals8Get",
+        "operationId": "/userjournals/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5715,7 +5715,7 @@
         "tags": [
           "Challenges"
         ],
-        "operationId": "UserchallengemilestonesPut",
+        "operationId": "/userchallengemilestones",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -5827,7 +5827,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsPost",
+        "operationId": "/contents",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6007,7 +6007,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsGet",
+        "operationId": "Get/contents",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6116,7 +6116,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsByIdPost",
+        "operationId": "/contents/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6303,7 +6303,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsByIdGet",
+        "operationId": "Get/contents/{id}",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6407,7 +6407,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsRateByIdPost",
+        "operationId": "/contents/{id}/rate",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6503,7 +6503,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsPaginatedGet",
+        "operationId": "/contents/paginated",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6761,7 +6761,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsNextByIdGet",
+        "operationId": "/contents/{id}/next",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6872,7 +6872,7 @@
         "tags": [
           "Contents"
         ],
-        "operationId": "ContentsPreviousByIdGet",
+        "operationId": "/contents/{id}/previous",
         "deprecated": false,
         "produces": [
           "application/json; charset=utf-8"
@@ -6983,7 +6983,7 @@
         "tags": [
           "Settings"
         ],
-        "operationId": "SettingsCountriesGet",
+        "operationId": "/settings/countries",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -7012,7 +7012,7 @@
         "tags": [
           "Messages"
         ],
-        "operationId": "MessagesTemplatesGet",
+        "operationId": "/messages/templates",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -7041,7 +7041,7 @@
         "tags": [
           "Messages"
         ],
-        "operationId": "Users122Inboxitem99Get",
+        "operationId": "/messages/{id}",
         "deprecated": false,
         "produces": [
           "application/json"
