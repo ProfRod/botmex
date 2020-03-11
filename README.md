@@ -80,8 +80,10 @@ Generic commands:
 /delaccount <account name> - Remove a BitMex API Account
 /positions - List of open positions for all accounts
 /positions <account name> - List of open positions for specified account
-/close <trade symbol> - Close open trade for specified symbol for all accounts
-/close <trade symbol> <account name> - Close open trade for specified symbol for specified account
+/orders - List the last 40 orders for all accounts
+/orders <account name> - List the last 40 orders for specified account
+/wallet - List the last 40 wallet history entries for all accounts
+/wallet <account name> - List the last 40 wallet history entries for specified account
 
 Admin commands:
 /admins - List of admin users
